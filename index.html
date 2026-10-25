@@ -1,380 +1,979 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Public Finance — The Story of Government Money</title>
-<meta name="description" content="Story-based UPSC Public Finance notes with flashcards, calculator and PYQ quiz.">
-<link rel="stylesheet" href="css/style.css"></head><body>
-<div id="bar"><i id="barfill"></i></div>
-<header class="hero"><div class="wrap"><h1>💰 Public Finance – 2: The Story of Government Money</h1><div class="lead"><p>Simple, story-based notes covering the concepts, formulas, laws, committees and UPSC questions in your 51-page PDF.</p><p>Imagine India's government is running a huge household. It collects taxes, pays salaries, builds roads, provides food subsidies, borrows money and repays old loans. Sometimes its expenses exceed its income. To understand how the government manages this situation, we need to follow the journey of its money.</p></div>
-<nav class="tabs"><button data-t="notes" class="on">📖 Notes</button><button data-t="cards">🃏 Flashcards</button><button data-t="calc">🧮 Calculator</button><button data-t="quizt">🎯 PYQ Quiz</button><button id="theme" title="Dark mode">🌓</button></nav></div></header>
-<main class="wrap">
-<div id="notes" class="tab on"><div class="layout"><aside><h2>Contents</h2><ol id="toc"></ol><p id="prog"></p></aside><article><section class="chap c0" data-i="0"><h2 id="chapter-1-the-government-has-three-money-boxes"><span class="ico">🏦</span>Chapter 1: The government has three money boxes</h2>
-<p>Imagine the government has three different boxes. Each box has a different purpose, and you cannot treat them as the same thing.</p>
-<h4 class="step"><b>1</b>Consolidated Fund of India (CFI)</h4>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Public Finance Atlas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: left index rail on desktop, chip bar on phones; each part of the syllabus owns one hue. */
+:root{
+  --bg:#F2F4FA; --card:#FFFFFF; --ink:#15182C; --muted:#586080; --line:#DCE1EE; --hero:#15182C; --hero-ink:#F4F5FB;
+  --h1:oklch(0.68 0.19 35); --h2:oklch(0.70 0.13 190); --h3:oklch(0.66 0.21 355); --h4:oklch(0.62 0.19 255);
+  --h5:oklch(0.72 0.17 145); --h6:oklch(0.80 0.15 85); --h7:oklch(0.62 0.20 295); --h8:oklch(0.70 0.17 20);
+  --f-display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"DM Mono",ui-monospace,Menlo,Consolas,monospace;
+  --c:var(--h1);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0D0F1E;--card:#171A2E;--ink:#EEF0FB;--muted:#A5ABC9;--line:#2A2F4E;--hero:#171A2E;--hero-ink:#F4F5FB;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0D0F1E;--card:#171A2E;--ink:#EEF0FB;--muted:#A5ABC9;--line:#2A2F4E;--hero:#171A2E;--hero-ink:#F4F5FB;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;margin:0;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+h1,h2,h3,h4{font-family:var(--f-display);line-height:1.1;text-wrap:balance;margin:0}
+p{margin:0 0 .8em;max-width:68ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--c);outline-offset:2px;border-radius:6px}
+.wrap{max-width:1180px;margin-inline:auto}
 
-<p>Article 266(1)</p>
-<p>This is the government's main money box. Income from taxes, non-tax revenue, loans raised and repayments received are credited here.</p>
-<p>The government pays for most of its regular activities and development expenditure from this fund. Spending generally requires Parliament's authorisation through the Appropriation Act.</p>
-<h4 class="step"><b>2</b>Public Account of India (PA)</h4>
+/* hero */
+.hero{margin-top:16px;border-radius:28px;background:var(--hero);color:var(--hero-ink);padding:clamp(24px,5vw,56px);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto -80px -120px auto;width:380px;height:380px;border-radius:50%;background:conic-gradient(from 20deg,var(--h1),var(--h6),var(--h5),var(--h2),var(--h4),var(--h3),var(--h1));filter:blur(46px);opacity:.55;pointer-events:none}
+.hero>*{position:relative;z-index:1}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.8;margin-bottom:14px}
+.hero h1{font-size:clamp(2.6rem,8vw,5.8rem);font-weight:800;letter-spacing:-.03em}
+.hero h1 span{display:inline-block;background:linear-gradient(90deg,var(--h1),var(--h6),var(--h5));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:1.1rem;opacity:.9;margin-top:16px}
+.ticker{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.ticker code{font-family:var(--f-mono);font-size:13px;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
+.ticker code b{font-weight:500;color:var(--h6)}
 
-<p>Article 266(2)</p>
-<p>Imagine your friend gives you ₹1,000 to keep safely. You are holding the money, but it is not your income. You are acting as a trustee.</p>
-<p>Similarly, the government holds money that belongs to depositors or must be accounted for on their behalf.</p>
-<p>Examples include provident funds, small savings, postal deposits, the National Small Savings Fund and other specified funds.</p>
-<p>Parliament's prior approval is generally not required for withdrawals, but the money must still be properly accounted for.</p>
-<h4 class="step"><b>3</b>Contingency Fund of India</h4>
+/* nav */
+.shell{display:grid;grid-template-columns:240px minmax(0,1fr);gap:40px;margin-top:28px}
+.rail{position:sticky;top:calc(16px + env(safe-area-inset-top,0px));align-self:start;display:flex;flex-direction:column;gap:4px;max-height:calc(100vh - 40px);overflow-y:auto}
+.rail a{display:flex;align-items:center;gap:10px;text-decoration:none;padding:9px 12px;border-radius:12px;font-weight:600;font-size:14px;color:var(--muted);--c:var(--h1)}
+.rail a i{width:10px;height:10px;border-radius:50%;background:var(--c);flex:none}
+.rail a:hover,.rail a.on{background:color-mix(in oklab,var(--c) 16%,var(--card));color:var(--ink)}
+.rail small{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:6px 12px}
+.themebtn{margin:10px 12px 0;font:600 13px var(--f-body);border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 14px;cursor:pointer}
+@media (max-width:900px){
+  .shell{display:block}
+  .rail{flex-direction:row;overflow-x:auto;position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);padding:10px 0;margin:0 -2px;max-height:none;gap:6px;scrollbar-width:none}
+  .rail a{white-space:nowrap;border:1px solid var(--line);background:var(--card);padding:7px 12px}
+  .rail small,.themebtn{display:none}
+}
 
-<p>Article 267(1)</p>
-<p>Imagine a sudden flood destroys a bridge. The government needs money immediately and cannot wait for the usual spending process.</p>
-<p>This fund helps meet unforeseen or emergency expenditure. It is at the disposal of the President of India and is operated through the Finance Ministry's prescribed arrangements.</p>
-<p>Once money is used, Parliament's approval is obtained for the necessary expenditure and the fund is replenished.</p>
-<h3 id="the-easiest-way-to-remember">The easiest way to remember</h3>
-<table>
-<thead>
-<tr>
-  <th>Fund</th>
-  <th>Imagine it as</th>
-  <th>Parliament's role</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Consolidated Fund</td>
-  <td>Main government account</td>
-  <td>Prior authorisation required for expenditure</td>
-</tr>
-<tr>
-  <td>Public Account</td>
-  <td>Money held in trust</td>
-  <td>Prior approval for withdrawal generally not required</td>
-</tr>
-<tr>
-  <td>Contingency Fund</td>
-  <td>Emergency cash reserve</td>
-  <td>Later approval and replenishment</td>
-</tr>
-</tbody>
-</table>
-<div class="callout trap"><strong>UPSC trap</strong> All government money does not follow the same withdrawal rules. In the Public Account, the government often acts as a trustee rather than as the owner of the deposited money.</div>
-<button class="done">✓ Mark chapter as read</button></section>
-<section class="chap c1" data-i="1"><h2 id="chapter-2-the-government-spends-more-than-it-earns"><span class="ico">⚖️</span>Chapter 2: The government spends more than it earns</h2>
-<p>Suppose a government collects ₹100, but its total expenditure is ₹130. It has a shortfall of ₹30.</p>
-<p>That shortfall is called a deficit.</p>
-<div class="formula"><span class="lhs">Deficit</span><span class="eq">=</span><span class="rhs">Expenditure <i>−</i> Income</span></div>
-<p>But the government has different types of income and expenditure. Therefore, economists calculate different kinds of deficits to discover exactly where the problem lies.</p>
-<h3 id="story-1-revenue-deficit-the-household-cannot-cover-daily-expenses">Story 1: Revenue deficit — the household cannot cover daily expenses</h3>
-<p>Imagine a family earns ₹60,000 per month but spends ₹80,000 on food, electricity, salaries of household staff and other regular needs.</p>
-<p>It is short by ₹20,000. It is borrowing even to meet its daily expenses.</p>
-<p>The government faces a similar situation when its regular revenue cannot cover its regular expenditure.</p>
-<div class="formula"><span class="lhs">Revenue Deficit</span><span class="eq">=</span><span class="rhs">Revenue Expenditure <i>−</i> Revenue Receipts</span></div>
-<p>Example:</p>
-<ul>
-<li>Revenue expenditure = ₹80,000 crore</li>
-<li>Revenue receipts = ₹60,000 crore</li>
-<li>Revenue deficit = ₹20,000 crore</li>
-</ul>
-<p>This indicates that the government is not earning enough revenue to meet its routine expenditure. A persistent revenue deficit can be fiscally unsustainable.</p>
-<div class="callout tip"><strong>Fiscal prudence</strong> Reducing the revenue deficit means improving the government's ability to meet current expenses from its revenue.</div>
-<h3 id="story-2-effective-revenue-deficit-some-spending-actually-creates-assets">Story 2: Effective revenue deficit — some spending actually creates assets</h3>
-<p>Now imagine that the government gives ₹5 lakh crore in revenue grants to states. Out of this, ₹1 lakh crore is specifically used by the states to build capital assets such as roads, schools and hospitals.</p>
-<p>Although these grants are recorded as revenue expenditure in the Union Government's accounts, they help create assets.</p>
-<p>Should all ₹5 lakh crore be treated as unproductive routine spending? Not quite.</p>
-<p>This is why the government introduced the Effective Revenue Deficit (ERD) in the Union Budget 2011–12.</p>
-<div class="formula"><span class="lhs">ERD</span><span class="eq">=</span><span class="rhs">Revenue Deficit <i>−</i> Grants for Capital Asset Creation</span></div>
-<p>Example:</p>
-<ul>
-<li>Revenue deficit = ₹5 lakh crore</li>
-<li>Grants for creating capital assets = ₹1 lakh crore</li>
-<li>Effective revenue deficit = ₹4 lakh crore</li>
-</ul>
-<p>ERD gives a clearer picture of the portion of revenue deficit that is not accounted for by these asset-creating grants.</p>
-<h3 id="story-3-fiscal-deficit-how-much-money-must-the-government-borrow">Story 3: Fiscal deficit — how much money must the government borrow?</h3>
-<p>Return to our household. Suppose its total expenditure is ₹130, but its non-borrowed receipts are only ₹100. It must arrange the remaining ₹30, usually through borrowing.</p>
-<p>This is the central idea behind the fiscal deficit.</p>
-<div class="formula"><span class="lhs">Fiscal Deficit</span><span class="eq">=</span><span class="rhs">Total Expenditure <i>−</i> (Revenue Receipts <i>+</i>Non-debt Capital Receipts)</span></div>
-<p>Non-debt capital receipts include recoveries of loans and disinvestment proceeds, among other items.</p>
-<p>Why exclude borrowings from receipts? Because borrowing is how the government finances its gap. If we count the borrowed money as income, the gap disappears on paper even though the government has taken on a new liability.</p>
-<div class="callout tip"><strong>Remember</strong> Fiscal deficit shows the government's overall borrowing requirement before financing that gap.</div>
-<h3 id="story-4-primary-deficit-forget-the-burden-of-old-loans-for-a-moment">Story 4: Primary deficit — forget the burden of old loans for a moment</h3>
-<p>Imagine the government has a fiscal deficit of ₹50,000 crore. Out of its expenses, ₹15,000 crore goes towards paying interest on loans taken in previous years.</p>
-<p>How much is the deficit after excluding this old interest burden?</p>
-<div class="formula"><span class="lhs">Primary Deficit</span><span class="eq">=</span><span class="rhs">Fiscal Deficit <i>−</i> Interest Payments</span></div>
-<p>Here:</p>
-<ul>
-<li>Fiscal deficit = ₹50,000 crore</li>
-<li>Interest payments = ₹15,000 crore</li>
-<li>Primary deficit = ₹35,000 crore</li>
-</ul>
-<p>The primary deficit tells us how much of the current fiscal gap remains after excluding interest payments on past debt.</p>
-<p>If the primary deficit is zero, the fiscal deficit is equal to interest payments. This does not mean the government has no deficit; it means the entire deficit corresponds to interest payments.</p>
-<h3 id="story-5-monetised-deficit-the-central-bank-helps-finance-the-gap">Story 5: Monetised deficit — the central bank helps finance the gap</h3>
-<p>Suppose the government needs to borrow money, and the Reserve Bank of India (RBI) directly provides financing by creating new money or purchasing government securities directly from the government.</p>
-<p>This is the idea behind a monetised deficit.</p>
-<div class="formula"><span class="lhs">Monetised Deficit</span><span class="eq">=</span><span class="rhs">Net RBI Credit to Government</span></div>
-<p>The important concern is inflation. If money supply expands excessively relative to the goods and services available, prices may rise.</p>
-<p>However, monetary financing may be considered in exceptional circumstances. Your notes explain that routine monetised deficit financing is restricted under the FRBM framework, while exceptional situations may be treated differently.</p>
-<h3 id="story-6-budget-deficit-the-simplest-calculation">Story 6: Budget deficit — the simplest calculation</h3>
-<p>The broadest calculation in your notes is:</p>
-<div class="formula"><span class="lhs">Budget Deficit</span><span class="eq">=</span><span class="rhs">Total Expenditure <i>−</i> Total Receipts</span></div>
-<p>Unlike fiscal deficit, this basic formula includes total receipts as presented, including borrowings. Fiscal deficit excludes borrowings from the receipt side.</p>
-<p>Here is the complete family of deficit indicators:</p>
-<table>
-<thead>
-<tr>
-  <th>Type</th>
-  <th>Formula</th>
-  <th>What it tells us</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Budget deficit</td>
-  <td>Total expenditure − total receipts</td>
-  <td>Overall shortfall under the stated definition</td>
-</tr>
-<tr>
-  <td>Revenue deficit</td>
-  <td>Revenue expenditure − revenue receipts</td>
-  <td>Gap in routine government finances</td>
-</tr>
-<tr>
-  <td>Effective revenue deficit</td>
-  <td>Revenue deficit − capital-asset grants</td>
-  <td>Revenue deficit after adjusting for asset-creating grants</td>
-</tr>
-<tr>
-  <td>Fiscal deficit</td>
-  <td>Total expenditure − non-borrowed receipts</td>
-  <td>Overall borrowing requirement</td>
-</tr>
-<tr>
-  <td>Primary deficit</td>
-  <td>Fiscal deficit − interest payments</td>
-  <td>Fiscal gap excluding past interest burden</td>
-</tr>
-<tr>
-  <td>Monetised deficit</td>
-  <td>Net RBI credit to government</td>
-  <td>Deficit financed through RBI credit</td>
-</tr>
-</tbody>
-</table>
-<h3 id="the-crucial-difference-receipts-and-income">The crucial difference: receipts and income</h3>
-<p>Your notes make an important distinction.</p>
-<ul>
-<li>Receipts: Money coming into the government, including borrowings.</li>
-<li>Non-borrowed receipts used in fiscal-deficit calculations: Revenue receipts plus non-debt capital receipts.</li>
-</ul>
-<p>Borrowing brings cash into the government's account, but it also creates a repayment obligation. That is why fiscal deficit excludes borrowing from its receipt calculation.</p>
-<button class="done">✓ Mark chapter as read</button></section>
-<section class="chap c2" data-i="2"><h2 id="chapter-3-public-debt-the-loans-the-government-must-carry"><span class="ico">📈</span>Chapter 3: Public debt — the loans the government must carry</h2>
-<p>Imagine the government has borrowed money over several years to build highways, pay expenses and finance deficits. Even if one year's deficit falls, the earlier loans do not automatically disappear.</p>
-<p>Public debt is the outstanding borrowing of the government at a particular time.</p>
-<p>Your notes divide it into two main categories.</p>
-<h4 class="step"><b>1</b>Internal debt</h4>
+/* parts */
+.part{--c:var(--h1);margin-top:44px;scroll-margin-top:84px}
+.part-head{display:flex;flex-direction:column;gap:6px;padding:26px 26px 22px;border-radius:24px;background:color-mix(in oklab,var(--c) 22%,var(--card));border:1px solid color-mix(in oklab,var(--c) 40%,var(--line));margin-bottom:22px}
+.part-head .tag{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in oklab,var(--c) 55%,var(--ink))}
+.part-head h2{font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:800;letter-spacing:-.02em}
+.part-head p{color:var(--muted);margin:4px 0 0}
+h3{font-size:1.35rem;font-weight:700;margin:30px 0 12px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+h3 .n{font-family:var(--f-mono);font-size:12px;font-weight:500;padding:3px 9px;border-radius:999px;background:color-mix(in oklab,var(--c) 24%,var(--card));color:color-mix(in oklab,var(--c) 50%,var(--ink))}
+h4{font-size:1.02rem;font-weight:700;margin:0 0 6px;color:color-mix(in oklab,var(--c) 55%,var(--ink))}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 20px;min-width:0}
+.card.tint{background:color-mix(in oklab,var(--c) 11%,var(--card));border-color:color-mix(in oklab,var(--c) 30%,var(--line))}
+.card p:last-child,.card ul:last-child{margin-bottom:0}
+ul{margin:0 0 .8em;padding-left:1.2em;max-width:70ch}
+li{margin-bottom:.3em}
+li::marker{color:var(--c)}
+.formula{font-family:var(--f-mono);font-size:14px;background:var(--hero);color:var(--hero-ink);padding:12px 16px;border-radius:12px;margin:10px 0;overflow-x:auto;display:block;max-width:100%;line-height:1.5}
+.formula b{color:var(--h6);font-weight:500}
+.aid{display:flex;gap:12px;align-items:flex-start;padding:14px 18px;border-radius:16px;background:color-mix(in oklab,var(--h6) 22%,var(--card));border:1px dashed color-mix(in oklab,var(--h6) 60%,var(--line));margin:14px 0;max-width:80ch}
+.aid b{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;flex:none;padding-top:4px}
+.aid span{min-width:0}
+.src{font-size:13px;color:var(--muted);border-left:3px solid var(--c);padding:2px 0 2px 12px;margin:12px 0;max-width:80ch}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:var(--card);margin:12px 0}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14.5px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:color-mix(in oklab,var(--c) 18%,var(--card));font-family:var(--f-display);font-weight:700;font-size:14px;position:relative}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--f-mono);font-size:13.5px}
+.dim{color:var(--muted);font-style:italic}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:999px;background:color-mix(in oklab,var(--c) 22%,var(--card));color:color-mix(in oklab,var(--c) 50%,var(--ink));margin:0 4px 4px 0}
+.yes{color:color-mix(in oklab,var(--h5) 60%,var(--ink));font-weight:700}
+.no{color:color-mix(in oklab,var(--h8) 70%,var(--ink));font-weight:700}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;margin:10px 0;padding:0 18px}
+summary{cursor:pointer;font-weight:700;padding:14px 0;font-family:var(--f-display);font-size:1.05rem}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:12px}
+details>*:last-child{margin-bottom:16px}
 
-<p>The government borrows within India, generally in Indian rupees.</p>
-<p>Examples listed in your notes include Treasury Bills, dated government securities, bonds held by LIC, banks and the public, and specified RBI facilities such as Ways and Means Advances (WMA).</p>
-<h4 class="step"><b>2</b>External debt</h4>
+/* timeline */
+.tl{display:grid;gap:12px;margin:14px 0;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))}
+.tl>div{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--c);border-radius:16px;padding:14px 16px}
+.tl b{font-family:var(--f-display);font-size:1.5rem;display:block;color:color-mix(in oklab,var(--c) 55%,var(--ink))}
 
-<p>The government borrows from foreign governments or international institutions such as the IMF, World Bank and Asian Development Bank.</p>
-<p>External borrowing may involve foreign currencies, creating exposure to exchange-rate fluctuations. Repayment may therefore require foreign exchange.</p>
-<h3 id="public-debt-versus-other-liabilities">Public debt versus other liabilities</h3>
-<p>Your notes also distinguish between:</p>
-<ul>
-<li>Public debt: Borrowings with a repayment obligation, such as loans and bonds.</li>
-<li>Other liabilities: Obligations such as small savings and provident fund balances, which are not necessarily classified as conventional public debt but still have to be accounted for.</li>
-</ul>
-<p>The expression public debt and other liabilities includes outstanding liabilities arising from various small-savings schemes, provident funds and similar arrangements.</p>
-<p>One important qualification: the notes' simplified description of external debt should not be read as meaning that every foreign-related borrowing is sovereign debt. Private external borrowings and NRI deposits are not automatically sovereign public debt.</p>
-<h3 id="who-manages-public-debt">Who manages public debt?</h3>
-<p>Your notes identify the Reserve Bank of India as an important public-debt manager, referring to the Public Debt Act, 1944.</p>
-<h3 id="what-happens-when-public-debt-becomes-too-high">What happens when public debt becomes too high?</h3>
-<p>Imagine that the family spends an increasing part of its monthly income just paying interest on old loans. It then has less money for education, healthcare and other needs.</p>
-<p>The government faces a similar problem:</p>
-<ol>
-<li>Higher interest burden: More revenue goes towards interest payments.</li>
-<li>Crowding out: Government borrowing may absorb funds that could otherwise support private investment.</li>
-<li>Possible credit-rating downgrades: Investors may become more concerned about the government's ability to repay.</li>
-<li>Reduced fiscal space: Less money remains available for future development or emergencies.</li>
-</ol>
-<h3 id="story-7-off-budget-borrowing-a-loan-hidden-behind-another-name">Story 7: Off-budget borrowing — a loan hidden behind another name</h3>
-<p>Suppose a government wants to provide food subsidies. Instead of borrowing directly through the regular budget, a public sector undertaking or special-purpose vehicle takes a loan to finance the activity.</p>
-<p>The expenditure may support a government programme, but the borrowing may not appear as part of the officially reported fiscal deficit in the same way as direct budget borrowing.</p>
-<p>This is called off-budget borrowing.</p>
-<p>Your notes mention:</p>
-<ul>
-<li>Loans raised through public sector undertakings (PSUs) or special-purpose vehicles (SPVs).</li>
-<li>Government guarantees for loans.</li>
-<li>Bonds issued by institutions such as the Food Corporation of India (FCI) and Power Finance Corporation (PFC).</li>
-<li>An example in which FCI borrows from the National Small Savings Fund to finance food subsidy requirements rather than receiving the entire amount through a direct budget allocation.</li>
-</ul>
-<p>Why is this a concern? The liability still exists even if it is not immediately visible in the headline fiscal-deficit figure. It can reduce transparency and make the government's true financial burden harder to assess.</p>
-<button class="done">✓ Mark chapter as read</button></section>
-<section class="chap c3" data-i="3"><h2 id="chapter-4-the-frbm-act-the-government-promises-to-control-its-spending"><span class="ico">📜</span>Chapter 4: The FRBM Act — the government promises to control its spending</h2>
-<p>Imagine a household that repeatedly borrows without a repayment plan. Eventually, its interest burden grows and lenders become worried.</p>
-<p>India faced concerns about high fiscal deficits, rising public debt and weak fiscal discipline. Following the economic reforms of 1991, the need for a more rules-based fiscal framework became increasingly important.</p>
-<p>This led to the Fiscal Responsibility and Budget Management (FRBM) Act, 2003.</p>
-<p>Its central idea is simple: the government should manage its finances responsibly, reduce deficits and debt, disclose its fiscal plans and support macroeconomic stability.</p>
-<h3 id="what-did-the-original-2003-act-provide">What did the original 2003 Act provide?</h3>
-<p>Your notes list these original targets:</p>
-<ul>
-<li>Revenue deficit: reduce it to zero by 2008.</li>
-<li>Fiscal deficit: reduce it to 3% of GDP by 2009.</li>
-</ul>
-<p>GDP means the total value of final goods and services produced in an economy during a given period. Expressing a deficit as a percentage of GDP allows us to compare it with the size of the economy.</p>
-<p>The Act also required the government to present three important documents annually:</p>
-<ol>
-<li>Medium-Term Fiscal Policy Statement (MTFPS): A medium-term picture of fiscal indicators and targets.</li>
-<li>Fiscal Policy Strategy Statement (FPSS): The government's fiscal priorities and strategy.</li>
-<li>Macroeconomic Framework Statement (MFS): An overview of the economy and its key macroeconomic indicators.</li>
-</ol>
-<p>The original framework also restricted direct RBI financing of the fiscal deficit through primary issuances of government securities.</p>
-<h3 id="why-did-the-original-rules-face-criticism">Why did the original rules face criticism?</h3>
-<p>Imagine telling a household that it must reduce borrowing every year, regardless of whether someone loses their job or faces a medical emergency.</p>
-<p>A rigid rule can become difficult to follow when circumstances change. The FRBM framework faced similar criticisms:</p>
-<ul>
-<li>Targets were repeatedly missed or postponed, including after the global financial crisis.</li>
-<li>Rules could be too rigid during economic downturns.</li>
-<li>The framework did not sufficiently distinguish between borrowing for consumption and borrowing for productive investment.</li>
-<li>It did not adequately account for cyclical changes in the economy.</li>
-</ul>
-<p>This raised a difficult question: should the government always reduce its deficit immediately, or should it have some flexibility during a crisis?</p>
-<h3 id="story-8-the-2012-amendment-flexibility-and-a-better-measure">Story 8: The 2012 amendment — flexibility and a better measure</h3>
-<p>The FRBM Amendment of 2012 revised the fiscal framework and allowed more realistic timeframes.</p>
-<p>According to your notes, it provided for:</p>
-<ul>
-<li>Fiscal deficit of 3% of GDP by 2017.</li>
-<li>Revenue deficit below 2% of GDP by 2015.</li>
-<li>Effective revenue deficit of zero by 2015.</li>
-</ul>
-<p>It also introduced the Medium-Term Expenditure Framework, which sets out a rolling three-year framework for expenditure indicators.</p>
-<p>The key development was the formal introduction of ERD into the fiscal framework. It recognised that some grants recorded as revenue expenditure help create capital assets.</p>
-<p>These dates are the historical targets in your PDF, not a statement that each target was actually achieved.</p>
-<h3 id="story-9-the-n-k-singh-committee-should-debt-be-the-main-anchor">Story 9: The N. K. Singh Committee — should debt be the main anchor?</h3>
-<p>In 2017, the government established the FRBM Review Committee, chaired by N. K. Singh, to review the existing framework and recommend a more modern fiscal system.</p>
-<p>Instead of focusing only on annual deficit targets, the committee proposed a broader approach based on the government's total debt.</p>
-<p>Its main recommendations, as given in your notes, were:</p>
-<table>
-<thead>
-<tr>
-  <th>Recommendation</th>
-  <th>Simple meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Debt-to-GDP anchor</td>
-  <td>Aim for combined government debt of 60% of GDP: 40% for the Centre and 20% for the states</td>
-</tr>
-<tr>
-  <td>Fiscal-deficit glide path</td>
-  <td>Gradually reduce the fiscal deficit, with 2.5% of GDP suggested for 2023, subject to later revisions</td>
-</tr>
-<tr>
-  <td>Remove the revenue-deficit target</td>
-  <td>Assess overall fiscal health rather than focusing only on the revenue side</td>
-</tr>
-<tr>
-  <td>Escape clause</td>
-  <td>Allow deviations of up to 0.5% of GDP in specified situations such as national emergencies, war and natural disasters</td>
-</tr>
-<tr>
-  <td>Fiscal Council</td>
-  <td>Establish an independent body to oversee and assess fiscal policy</td>
-</tr>
-</tbody>
-</table>
-<div class="callout tip"><strong>Why does this matter?</strong></div>
-<p>Suppose two governments each have a fiscal deficit of ₹1 lakh crore. One may have a relatively small accumulated debt, while the other may already carry a very large debt burden.</p>
-<p>Their financial situations are not identical. Looking at the debt-to-GDP ratio helps assess the accumulated burden relative to the economy's capacity.</p>
-<p>A fiscal deficit measures a gap during a period; public debt measures accumulated liabilities at a point in time.</p>
-<h3 id="what-did-your-pdf-say-about-the-position-in-2025-26">What did your PDF say about the position in 2025–26?</h3>
-<p>The presentation gives the following historical snapshot:</p>
-<ul>
-<li>The COVID-19 crisis led to a sharp deviation from the earlier fiscal-consolidation path.</li>
-<li>The revised estimate for the Centre's fiscal deficit in 2024–25 was 4.8% of GDP.</li>
-<li>The Budget Estimate for 2025–26 was 4.4% of GDP.</li>
-<li>The 3% fiscal-deficit target was described as deferred to 2025–26 or beyond.</li>
-<li>The proposed independent Fiscal Council had not yet been established, according to the presentation.</li>
-</ul>
-<p>These are the figures and status reported by your notes. They should not be treated as the latest fiscal position for October 2026.</p>
-<button class="done">✓ Mark chapter as read</button></section>
-<section class="chap c4" data-i="4"><h2 id="chapter-5-fiscal-consolidation-repairing-the-government-s-finances"><span class="ico">🛠️</span>Chapter 5: Fiscal consolidation — repairing the government's finances</h2>
-<p>Imagine that the government wants to reduce its borrowing without damaging development. It cannot simply stop spending on everything. It must increase revenue, reduce waste and spend more efficiently.</p>
-<p>This process is called fiscal consolidation.</p>
-<p>Its aims are to reduce deficits and debt sustainably, maintain macroeconomic stability, reduce the interest burden and preserve resources for future generations.</p>
-<p>Your notes identify seven approaches:</p>
-<h4 class="step"><b>1</b>Increase revenue</h4>
-<p>Expand the tax base, improve tax compliance through systems such as GST, and raise non-tax revenue through dividends, disinvestment and spectrum auctions.</p>
-<h4 class="step"><b>2</b>Rationalise expenditure</h4>
-<p>Target subsidies better through mechanisms such as Direct Benefit Transfer (DBT), reduce wasteful spending and control the growth of revenue expenditure.</p>
-<h4 class="step"><b>3</b>Disinvestment and monetisation</h4>
-<p>Sell government stakes in public sector enterprises where appropriate and generate revenue from existing public assets.</p>
-<h4 class="step"><b>4</b>Control the fiscal deficit</h4>
-<p>Follow a credible fiscal path and use medium-term fiscal policy statements to guide decisions.</p>
-<h4 class="step"><b>5</b>Manage debt efficiently</h4>
-<p>Prefer suitable, lower-cost, long-term borrowing and improve transparency by avoiding hidden off-budget liabilities.</p>
-<h4 class="step"><b>6</b>Reform subsidies</h4>
-<p>Rationalise food, fertiliser and petroleum subsidies while considering their policy objectives.</p>
-<h4 class="step"><b>7</b>Improve budgeting and transparency</h4>
-<p>Use gender budgeting, outcome budgeting and performance-based budgeting to assess whether spending achieves its intended purpose.</p>
-<p>The central lesson is that fiscal consolidation does not simply mean cutting expenditure. It means improving the balance between revenue, spending, borrowing and development.</p>
-<button class="done">✓ Mark chapter as read</button></section>
-<section class="chap c5" data-i="5"><h2 id="chapter-6-zero-based-budgeting-every-rupee-must-justify-itself"><span class="ico">0️⃣</span>Chapter 6: Zero-Based Budgeting — every rupee must justify itself</h2>
-<p>Imagine a department received ₹100 crore last year. This year, it asks for ₹110 crore.</p>
-<p>Should the government automatically approve the amount because the department received money last year? No.</p>
-<p>In Zero-Based Budgeting (ZBB), the department starts from zero and must justify its activities and expenditure afresh.</p>
-<p>The basic principle is: start from zero and justify every rupee.</p>
-<p>Your notes identify five features:</p>
-<ol>
-<li>No automatic carry-forward: Last year's allocation does not guarantee this year's funding.</li>
-<li>Bottom-up approach: Budget proposals are developed from the operational level upwards.</li>
-<li>Justification of every activity: Each unit or department must explain why its expenditure is necessary.</li>
-<li>Evaluation of alternatives: Different methods of achieving the same objective are compared.</li>
-<li>Resource optimisation: Wasteful, duplicated or unnecessary spending can be removed.</li>
-</ol>
-<p>For example, if two departments are paying for similar services, ZBB can help examine whether both expenses are necessary.</p>
-<p>The focus is not merely on spending less. It is on making each allocation defensible.</p>
-<button class="done">✓ Mark chapter as read</button></section>
-<section class="chap c6" data-i="6"><h2 id="chapter-7-outcome-budgeting-what-did-the-money-actually-achieve"><span class="ico">🎯</span>Chapter 7: Outcome Budgeting — what did the money actually achieve?</h2>
-<p>Imagine the government spends ₹10,000 crore on rural roads.</p>
-<p>If the department reports only that it spent ₹10,000 crore, we know how much money was used, but not whether people benefited.</p>
-<p>An Outcome Budget connects the money allocated to measurable results.</p>
-<p>Your notes distinguish five components:</p>
-<h4 class="step"><b>O</b>Outlay <small>money allocated</small></h4>
-<p>Example: ₹10,000 crore for rural roads.</p>
-<h4 class="step"><b>O</b>Output <small>what was delivered</small></h4>
-<p>Example: 10,000 kilometres of rural roads constructed.</p>
-<h4 class="step"><b>O</b>Outcome <small>what changed for people</small></h4>
-<p>Example: Better rural connectivity and reduced travel time.</p>
-<h4 class="step"><b>I</b>Indicators <small>how progress is measured</small></h4>
-<p>Example: Road length completed, travel time saved or the percentage of villages connected.</p>
-<h4 class="step"><b>T</b>Timeline <small>when results are expected</small></h4>
-<p>Example: Year-wise construction targets and completion milestones.</p>
-<p>Your PDF gives two further examples:</p>
-<ul>
-<li>Pradhan Mantri Gram Sadak Yojana (PMGSY): An outlay of ₹10,000 crore, an output of 10,000 km of rural roads and outcomes such as improved connectivity and reduced travel time.</li>
-<li>Mid-Day Meal: An outlay of ₹12,000 crore, meals served to 10 crore students and intended outcomes such as improved nutrition and school attendance.</li>
-</ul>
-<p>Outcome budgeting improves accountability, transparency, monitoring and evaluation. It shifts attention from simply spending money to examining what the spending delivers.</p>
-<div class="callout tip"><strong>Remember</strong> the distinction: Outlay = money; output = immediate deliverable; outcome = result or impact.</div>
-<button class="done">✓ Mark chapter as read</button></section>
-<section class="chap c7" data-i="7"><h2 id="chapter-8-upsc-previous-year-questions-test-the-story"><span class="ico">📝</span>Chapter 8: UPSC Previous-Year Questions — test the story</h2><div id="quiz"></div><button class="done">✓ Mark chapter as read</button></section>
-<section class="chap c0" data-i="8"><h2 id="final-revision-the-entire-chapter-in-one-story"><span class="ico">🔁</span>Final revision: the entire chapter in one story</h2>
-<p>The government first collects and holds money in three constitutional funds: the Consolidated Fund, Public Account and Contingency Fund. It then spends on administration, welfare and development.</p>
-<p>When revenue cannot cover routine expenses, a revenue deficit appears. When the government has a wider gap between total expenditure and non-borrowed receipts, it has a fiscal deficit. Subtracting interest payments gives the primary deficit, while subtracting grants for capital-asset creation from revenue deficit gives the effective revenue deficit.</p>
-<p>The government finances its gap through borrowing, which contributes to public debt. Excessive debt raises interest costs and can reduce the money available for development. Off-budget borrowing can hide part of the burden from the headline fiscal figures.</p>
-<p>The FRBM Act of 2003 attempted to impose fiscal discipline through targets, reporting and restrictions on direct RBI financing. The 2012 amendment adjusted the framework, and the N. K. Singh Committee later recommended a debt-based anchor, a fiscal-deficit glide path, an escape clause and an independent Fiscal Council.</p>
-<p>Finally, fiscal consolidation aims to control debt sustainably. Zero-Based Budgeting asks whether each expense deserves funding, while Outcome Budgeting asks what the money actually achieved.</p>
-<p>That is the complete chain: collect money → spend money → measure the deficit → borrow if necessary → manage debt → impose fiscal discipline → measure results.</p>
+/* tax types rainbow */
+.three>div:nth-child(1){--c:var(--h1)}.three>div:nth-child(2){--c:var(--h4)}.three>div:nth-child(3){--c:var(--h5)}.three>div:nth-child(4){--c:var(--h3)}
+.three .card{border-top:6px solid var(--c)}
 
-    <button class="done">✓ Mark chapter as read</button></section>
-</article></div></div>
-<div id="cards" class="tab"><h2>🃏 Flashcards</h2><div class="row"><select id="deck"></select><button id="shuf">🔀 Shuffle</button><span id="cnt"></span></div>
-<div id="card"><div class="face front"></div><div class="face back"></div></div>
-<div class="row"><button id="prev">← Prev</button><button id="flip">Flip (space)</button><button id="next">Next →</button></div>
-<div class="row"><button id="know" class="good">✅ Got it</button><button id="again" class="bad">🔁 Review again</button></div><p id="score"></p></div>
-<div id="calc" class="tab"><h2>🧮 Deficit Calculator</h2><p>Enter figures in ₹ crore. All deficits update live.</p><div class="grid" id="inputs"></div><div class="grid" id="results"></div></div>
-<div id="quizt" class="tab"><h2>🎯 Previous-Year Questions</h2><p id="qscore"></p><div id="quizhost"></div></div>
-</main><footer>Prepared from story-based Public Finance notes. Figures are historical snapshots, not the latest fiscal position.</footer>
-<script src="js/quiz-data.js"></script><script src="js/app.js"></script></body></html>
+/* calculator */
+.calc{display:grid;gap:18px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+@media (max-width:760px){.calc{grid-template-columns:1fr}}
+.calc label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600;color:var(--muted)}
+.calc input{font:500 16px var(--f-mono);padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+.fields{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.out{display:grid;gap:10px}
+.out div{display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:12px 16px;border-radius:14px;background:color-mix(in oklab,var(--k) 18%,var(--card));border:1px solid color-mix(in oklab,var(--k) 40%,var(--line))}
+.out span{font-weight:700}
+.out strong{font-family:var(--f-mono);font-size:1.3rem;font-variant-numeric:tabular-nums}
+.out small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.hint{font-size:13px;color:var(--muted)}
+
+/* quiz */
+.qbar{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:6px 0 18px}
+.score{font-family:var(--f-mono);font-size:14px;padding:8px 14px;border-radius:999px;background:var(--card);border:1px solid var(--line)}
+.btn{font:600 14px var(--f-body);border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 16px;cursor:pointer}
+.btn:hover{border-color:var(--c)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 20px;margin-bottom:14px}
+.q header{display:flex;gap:8px;align-items:center;margin-bottom:8px}
+.q header b{font-family:var(--f-display);font-size:1.1rem}
+.q .yr{font-family:var(--f-mono);font-size:12px;padding:2px 9px;border-radius:999px;background:color-mix(in oklab,var(--c) 24%,var(--card));color:color-mix(in oklab,var(--c) 50%,var(--ink))}
+.q p.stem{white-space:pre-line;max-width:80ch}
+.opts{display:grid;gap:8px;margin-top:10px}
+.opt{display:flex;gap:12px;align-items:flex-start;text-align:left;font:500 15px var(--f-body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 14px;cursor:pointer;width:100%}
+.opt i{font-style:normal;font-family:var(--f-mono);font-weight:500;flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--card);border:1px solid var(--line);font-size:12px}
+.opt:hover:not(:disabled){border-color:var(--c)}
+.opt.right{background:color-mix(in oklab,var(--h5) 28%,var(--card));border-color:var(--h5)}
+.opt.wrong{background:color-mix(in oklab,var(--h8) 26%,var(--card));border-color:var(--h8)}
+.opt:disabled{cursor:default}
+.ans{margin-top:12px;font-size:14.5px;padding:10px 14px;border-radius:12px;background:color-mix(in oklab,var(--c) 12%,var(--card))}
+.mains{counter-reset:m}
+.mains .q{border-left:6px solid var(--h3)}
+
+/* glossary */
+.gl{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr))}
+.gl div{display:flex;gap:10px;align-items:baseline;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 12px;font-size:14px}
+.gl b{font-family:var(--f-mono);font-weight:500;color:color-mix(in oklab,var(--c) 55%,var(--ink));flex:none;min-width:5.2ch}
+footer{margin-top:56px;color:var(--muted);font-size:13px;max-width:70ch}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<div class="wrap">
+<header class="hero">
+  <div class="eyebrow">UPSC · GS3 Indian Economy · Study atlas</div>
+  <h1>Public <span>Finance</span></h1>
+  <p>How a government earns, spends and borrows. Eight parts in plain language, every deficit formula, GST end to end, and all 28 previous year questions you can attempt and check.</p>
+  <div class="ticker">
+    <code><b>FD</b> = Total Exp − (RR + Non-debt CR)</code>
+    <code><b>RD</b> = Rev Exp − Rev Receipts</code>
+    <code><b>PD</b> = FD − Interest</code>
+    <code><b>ERD</b> = RD − Capital-asset grants</code>
+  </div>
+</header>
+
+<div class="shell">
+<nav class="rail" aria-label="Sections" id="rail">
+  <small>Parts</small>
+  <a href="#p1" style="--c:var(--h1)"><i></i>1 · Basics & role of State</a>
+  <a href="#p2" style="--c:var(--h2)"><i></i>2 · Fiscal policy & Budget</a>
+  <a href="#p3" style="--c:var(--h3)"><i></i>3 · Public money, 3 funds</a>
+  <a href="#p4" style="--c:var(--h4)"><i></i>4 · Deficits</a>
+  <a href="#p5" style="--c:var(--h5)"><i></i>5 · Debt & off-budget</a>
+  <a href="#p6" style="--c:var(--h6)"><i></i>6 · FRBM & consolidation</a>
+  <a href="#p7" style="--c:var(--h7)"><i></i>7 · Taxation</a>
+  <a href="#p8" style="--c:var(--h8)"><i></i>8 · GST</a>
+  <a href="#p9" style="--c:var(--h2)"><i></i>9 · PYQs, 28 + Mains</a>
+  <a href="#p10" style="--c:var(--h4)"><i></i>10 · Glossary</a>
+  <button class="themebtn" id="themebtn" type="button">Switch theme</button>
+</nav>
+
+<main>
+
+<!-- PART 1 -->
+<section class="part" id="p1" style="--c:var(--h1)">
+  <div class="part-head"><span class="tag">Part A</span><h2>Public Finance: the basic idea</h2><p>The study of how government gets money and how it spends it.</p></div>
+
+  <h3><span class="n">1</span>Meaning and scope</h3>
+  <div class="grid">
+    <div class="card tint"><h4>Public income</h4><p>Where does government money come from? Taxes and non-tax receipts.</p></div>
+    <div class="card tint"><h4>Public expenditure</h4><p>Where does it spend? Administration, welfare, infrastructure.</p></div>
+    <div class="card tint"><h4>Public debt</h4><p>What happens when spending is more than receipts? Borrowing, and deficits.</p></div>
+  </div>
+  <p style="margin-top:14px"><b>"Public"</b> covers the Central Government, State Governments, local bodies (municipalities, panchayats), public corporations and statutory bodies.</p>
+  <h4>How the scope has grown</h4>
+  <p>Earlier it meant taxes, spending and borrowing. Now it also includes:</p>
+  <div><span class="pill">Social security & welfare</span><span class="pill">Stabilising business cycles</span><span class="pill">Reducing unemployment</span><span class="pill">Equity & egalitarian society</span><span class="pill">Capital formation</span><span class="pill">Sustaining growth</span></div>
+
+  <h3><span class="n">2</span>Musgrave's three functions</h3>
+  <div class="grid">
+    <div class="card" style="border-top:6px solid var(--h1)"><h4>Allocation</h4><p>Provide goods markets may not provide enough of, like roads and defence. Aim: efficient use of resources.</p></div>
+    <div class="card" style="border-top:6px solid var(--h6)"><h4>Distribution</h4><p>Make income and wealth fairer through taxes and subsidies.</p></div>
+    <div class="card" style="border-top:6px solid var(--h2)"><h4>Stabilisation</h4><p>Use fiscal tools to keep the economy steady: inflation and unemployment.</p></div>
+  </div>
+  <div class="aid"><b>Memory aid</b><span>Allocation = <em>what</em> gets provided. Distribution = <em>who</em> gets what. Stabilisation = keeping the economy <em>steady</em>.</span></div>
+
+  <h3><span class="n">3</span>Role of the State in the economy</h3>
+  <div class="tbl"><table>
+    <tr><th>Role</th><th>Features</th><th>Examples</th></tr>
+    <tr><td>Producer of public goods</td><td>Non-excludable (nobody can be kept out) and non-rivalrous (one person's use doesn't reduce what is left for others)</td><td>National defence, street lighting, law and order</td></tr>
+    <tr><td>Producer of private goods</td><td>Excludable and rivalrous. You must buy them; one person's use prevents use by others</td><td>Public hospitals, public transport, subsidised food</td></tr>
+    <tr><td>Regulator</td><td>Frames economic policy, ensures implementation, punishes violations</td><td>Market rules, environmental laws, labour rights, financial-sector regulation</td></tr>
+    <tr><td>Club goods (mixed)</td><td>Excludable but non-rivalrous, up to a point. Not pure public, not pure private</td><td>Toll road: pay to enter, many vehicles use it at once until congestion</td></tr>
+  </table></div>
+
+  <h3><span class="n">4</span>Subject matter of public finance</h3>
+  <div class="tbl"><table>
+    <tr><th>Topic</th><th>What it covers</th></tr>
+    <tr><td>Fiscal policy</td><td>Government strategy on taxation, expenditure and borrowing</td></tr>
+    <tr><td>Budget</td><td>Annual statement of estimated receipts and expenditure</td></tr>
+    <tr><td>Public revenue</td><td>Tax and non-tax income</td></tr>
+    <tr><td>Public expenditure</td><td>Spending on administration, welfare, infrastructure</td></tr>
+    <tr><td>Public debt</td><td>Internal and external borrowings</td></tr>
+    <tr><td>Federal finance</td><td>Centre–State financial relations</td></tr>
+    <tr><td>Local finance</td><td>Revenue and expenditure of local bodies</td></tr>
+  </table></div>
+</section>
+
+<!-- PART 2 -->
+<section class="part" id="p2" style="--c:var(--h2)">
+  <div class="part-head"><span class="tag">Part B</span><h2>Fiscal policy and the Budget</h2><p>The plan, and the document that carries it out.</p></div>
+
+  <h3><span class="n">5</span>Fiscal policy: meaning and objectives</h3>
+  <p>Government policy on public revenue, expenditure and debt. It is formulated by the <b>Ministry of Finance</b> with <b>NITI Aayog</b> support and implemented through the <b>annual Budget</b> presented to Parliament.</p>
+  <div><span class="pill">Promote growth</span><span class="pill">Price stability</span><span class="pill">Economic stability</span><span class="pill">Generate employment</span><span class="pill">Reduce inequality</span><span class="pill">Control wasteful spending</span></div>
+
+  <h3><span class="n">6</span>Three types of fiscal policy</h3>
+  <div class="grid">
+    <div class="card tint"><h4>Expansionary</h4><p><b>When:</b> recession or slowdown.<br><b>How:</b> spend more and/or cut taxes.<br><b>Goal:</b> raise demand, jobs, growth.</p></div>
+    <div class="card tint"><h4>Contractionary</h4><p><b>When:</b> high inflation.<br><b>How:</b> cut spending and/or raise taxes.<br><b>Goal:</b> control inflation, reduce deficit.</p></div>
+    <div class="card tint"><h4>Neutral</h4><p><b>When:</b> economy is stable.<br><b>How:</b> revenue ≈ expenditure.<br><b>Goal:</b> no major push or squeeze.</p></div>
+  </div>
+
+  <h3><span class="n">7</span>Countercyclical policy</h3>
+  <p>Policies that work <em>against</em> the direction of the economic cycle: stimulate in a downturn, cool in a boom.</p>
+  <div class="grid">
+    <div class="card"><h4>During recession or slowdown</h4>
+      <ul><li><b>Repo-rate cuts:</b> boost credit flow</li><li><b>CRR/SLR reduced:</b> improves liquidity</li><li><b>Capital expenditure:</b> infra push (highways, railways)</li><li><b>Tax cuts:</b> encourage investment (2019 corporate tax cut)</li><li><b>Welfare spending:</b> MGNREGA, PMGKY</li></ul></div>
+    <div class="card"><h4>During boom or high inflation</h4>
+      <ul><li><b>Repo-rate hikes:</b> curtail demand (post-COVID FY 2022)</li><li><b>Open-market sales:</b> absorb excess liquidity</li><li><b>Government spending cuts:</b> control overheating</li><li><b>Tax/duty hikes:</b> reduce consumption (fuel excise)</li><li><b>Subsidy rationalisation:</b> fiscal discipline</li><li><b>Tighter credit norms:</b> check speculative lending</li></ul></div>
+  </div>
+  <p class="src">Exam clarity: repo rate and CRR/SLR are monetary instruments run by the RBI. Taxes and government spending are fiscal instruments. The source lists them together because both kinds of policy help stabilise the economy.</p>
+
+  <h3><span class="n">8</span>Components of fiscal policy</h3>
+  <div><span class="pill">1 · Government receipts</span><span class="pill">2 · Government expenditure</span><span class="pill">3 · Public debt</span></div>
+  <p>All three are implemented through the Budget.</p>
+
+  <h3><span class="n">9</span>The Budget and its constitutional basis</h3>
+  <p>An estimate of income and spending for the coming financial year. The Constitution calls the Union Budget the <b>"Annual Financial Statement"</b>. It is prepared by the <b>Budget Division, Department of Economic Affairs, Ministry of Finance</b>.</p>
+  <div class="tbl"><table>
+    <tr><th>Article</th><th>What it says</th></tr>
+    <tr><td>112</td><td>Union Annual Financial Statement</td></tr>
+    <tr><td>202</td><td>State Annual Financial Statement</td></tr>
+    <tr><td>265</td><td>No tax can be imposed or collected except by authority of law</td></tr>
+    <tr><td>266(3)</td><td>No money withdrawn from the Consolidated Fund except by law and constitutional procedure</td></tr>
+    <tr><td>116</td><td>Vote on Account and other grants for specified purposes</td></tr>
+  </table></div>
+  <h4>Reading Budget data labels</h4>
+  <div class="grid">
+    <div class="card"><span class="pill">BE</span> Budget Estimates, e.g. 2025–26</div>
+    <div class="card"><span class="pill">PE</span> Provisional Estimates for the current year</div>
+    <div class="card"><span class="pill">RE</span> Revised Estimates, based on updated trends (till Dec)</div>
+    <div class="card"><span class="pill">A</span> Actuals for the previous year</div>
+  </div>
+
+  <h3><span class="n">10</span>Full Budget vs Vote on Account vs Interim Budget</h3>
+  <div class="tbl"><table>
+    <tr><th>Feature</th><th>Full Union Budget</th><th>Vote on Account</th><th>Interim Budget</th></tr>
+    <tr><td>Purpose</td><td>Complete financial plan for the year</td><td>Temporary approval for expenditure</td><td>Budget presented in election years</td></tr>
+    <tr><td>When presented</td><td>Every year, usually 1 Feb</td><td>When the full budget can't be passed before the FY begins</td><td>In an election year by the outgoing government</td></tr>
+    <tr><td>Covers</td><td>Receipts + expenditure + policy proposals</td><td>Only the expenditure side</td><td>Receipts + expenditure, no major policy changes by convention</td></tr>
+    <tr><td>Policy announcements</td><td>Yes: schemes, taxes, policies</td><td>No</td><td>Usually avoids major reforms or tax changes</td></tr>
+    <tr><td>Legal basis</td><td>Article 112</td><td>Article 116(1), short-term grants</td><td>Parliamentary convention, not in the Constitution</td></tr>
+    <tr><td>Passed by</td><td>Lok Sabha after full debate</td><td>Lok Sabha without debate (source's simplified description)</td><td>Lok Sabha with limited discussion</td></tr>
+    <tr><td>Duration</td><td>Whole FY, 1 Apr to 31 Mar</td><td>Normally 2 months, can be extended</td><td>Valid until the new full budget is passed</td></tr>
+  </table></div>
+
+  <h3><span class="n">11</span>Capital and revenue: receipts and expenditure</h3>
+  <div class="grid">
+    <div class="card tint"><h4>Capital expenditure (CapEx)</h4><p>Creates assets or reduces liabilities.</p><ul><li>Roads, railways, schools</li><li>Loans to States or abroad</li><li>Repayment of past loans</li></ul><p>Effect: raises productive capacity.</p></div>
+    <div class="card tint"><h4>Revenue expenditure</h4><p>Creates no asset and reduces no liability. Consumptive in nature.</p><ul><li>Salaries, pensions</li><li>Subsidies, grants</li><li>Interest payments</li><li>Administrative costs</li></ul></div>
+    <div class="card tint"><h4>Capital receipts</h4><p>Create a liability or reduce assets. Not regular income.</p><ul><li>Market borrowings</li><li>Disinvestment</li><li>Loan recoveries</li></ul></div>
+    <div class="card tint"><h4>Revenue receipts</h4><p>Recurring, non-redeemable, no repayment liability. Used for daily functioning.</p><ul><li>Taxes: GST, income tax</li><li>Non-tax: fines, interest, dividends</li><li>Grants (as listed in the source)</li></ul></div>
+  </div>
+  <p class="src">Some grants booked as revenue expenditure still build assets for the receiving government. That is exactly why Effective Revenue Deficit exists (Part 4).</p>
+  <div class="aid"><b>Memory aid</b><span>CapEx: asset created or liability reduced. Revenue spend: routine, no asset. Capital receipt: liability created or asset reduced. Revenue receipt: income with no repayment duty.</span></div>
+</section>
+
+<!-- PART 3 -->
+<section class="part" id="p3" style="--c:var(--h3)">
+  <div class="part-head"><span class="tag">Part C</span><h2>Public money and the three funds</h2><p>Every rupee in and out of government is recorded in one of three accounts.</p></div>
+  <h3><span class="n">12</span>CFI vs Public Account vs Contingency Fund</h3>
+  <div class="tbl"><table>
+    <tr><th>Aspect</th><th>Consolidated Fund (CFI)</th><th>Public Account (PA)</th><th>Contingency Fund</th></tr>
+    <tr><td>Article</td><td>266(1)</td><td>266(2)</td><td>267(1)</td></tr>
+    <tr><td>Consists of</td><td>All tax and non-tax revenue, all loans raised, interest/principal received</td><td>National Small Savings Fund, Provident Fund, postal insurance, Defence Fund, National Investment Fund, National Calamity & Contingency Fund</td><td>Corpus of ₹30,000 crore, allocated by the Union Government</td></tr>
+    <tr><td>Use</td><td>All government expenditure, revenue and capital</td><td>Government is only a trustee. Not for normal expenditure</td><td>Unforeseen or emergency expenditure</td></tr>
+    <tr><td>Parliament approval</td><td><span class="yes">Mandatory</span> for spending, via Appropriation Act</td><td><span class="no">Not required</span> for withdrawal, but must be accounted for</td><td>Needed only for <b>replenishment</b> after use</td></tr>
+    <tr><td>Operated by</td><td>Government of India through Appropriation Acts</td><td>Government, on behalf of depositors</td><td>At the disposal of the President; operated by the Finance Secretary</td></tr>
+    <tr><td>Ownership</td><td>Belongs to the Government</td><td>Belongs to the people, held in trust</td><td>Controlled by the President</td></tr>
+  </table></div>
+  <div class="grid">
+    <div class="card tint"><h4>CFI in one line</h4><p>Main fund. Spending needs prior parliamentary authorisation.</p></div>
+    <div class="card tint"><h4>Public Account in one line</h4><p>Government as banker or trustee. PF, small savings, postal deposits.</p></div>
+    <div class="card tint"><h4>Contingency Fund in one line</h4><p>Emergency advance. Parliament approves later, for replenishment.</p></div>
+  </div>
+  <p class="src">The source's opening slide also lists the Finance Minister's broad principles of Viksit Bharat: zero poverty; high-quality universal school education; affordable comprehensive healthcare; full employment with a skilled workforce; 70% women in economic activities; agriculture strong enough to make India the "food basket of the world".</p>
+</section>
+
+<!-- PART 4 -->
+<section class="part" id="p4" style="--c:var(--h4)">
+  <div class="part-head"><span class="tag">Part D</span><h2>Deficits: meaning, formulas, interpretation</h2><p>A deficit is a shortfall. Which shortfall depends on which receipts and expenses you count.</p></div>
+
+  <h3><span class="n">13</span>What is a deficit?</h3>
+  <p>A deficit exists when expenditure is greater than income during a period.</p>
+  <code class="formula"><b>Deficit</b> = Expenditure − Income   (when Income &lt; Expenditure)</code>
+  <p>The source lists six measures: budget deficit, revenue deficit, fiscal deficit, primary deficit, effective revenue deficit and monetised deficit.</p>
+
+  <h3><span class="n">14</span>Receipts are not the same as income</h3>
+  <div class="grid">
+    <div class="card"><h4>Receipts</h4><ul><li>All money coming to government</li><li>Includes borrowings, income, recoveries, disinvestment</li><li>Used in Budget presentation</li></ul></div>
+    <div class="card tint"><h4>Income (for deficit sums)</h4><ul><li>Only non-borrowed receipts</li><li>Tax + non-tax revenue + non-debt capital receipts</li><li>Used in deficit calculations</li></ul></div>
+  </div>
+  <p style="margin-top:12px">Why leave borrowing out? It brings cash today but creates a repayment duty. Counting it as income would hide the very gap you are trying to measure.</p>
+  <div class="tbl"><table>
+    <tr><th>Receipts split</th><th>Items</th></tr>
+    <tr><td>Income (revenue receipts)</td><td>Tax, fees, fines, interest, profit, dividend</td></tr>
+    <tr><td>Capital receipts, <em>non-debt</em> creating</td><td>Disinvestment, loan recovery. No liability to repay</td></tr>
+    <tr><td>Borrowing (debt-creating capital receipts)</td><td>Sovereign loans, loans from international financial institutions, Treasury Bills, Ways and Means Advances. Liability to repay</td></tr>
+  </table></div>
+
+  <h3><span class="n">15–20</span>The six deficits</h3>
+  <div class="grid">
+    <div class="card"><h4>Budget deficit</h4><code class="formula"><b>BD</b> = Total expenditure − Total receipts</code><p>The source's broad shortfall measure. Modern Indian analysis tracks fiscal deficit instead.</p></div>
+    <div class="card"><h4>Revenue deficit</h4><code class="formula"><b>RD</b> = Revenue exp − Revenue receipts</code><p>Government is borrowing even for day-to-day, non-asset-creating costs. Fiscally unsustainable. Reducing it signals discipline.</p></div>
+    <div class="card"><h4>Fiscal deficit</h4><code class="formula"><b>FD</b> = Total exp − (Rev receipts + Non-debt capital receipts)</code><p>The overall borrowing requirement. Borrowings are excluded from receipts. The most tracked deficit.</p></div>
+    <div class="card"><h4>Effective revenue deficit</h4><code class="formula"><b>ERD</b> = RD − Grants for creation of capital assets</code><p>Introduced in Union Budget 2011–12. Grants to States/UTs for assets show as revenue expenditure but build assets. ERD shows the real burden of routine spending.</p></div>
+    <div class="card"><h4>Primary deficit</h4><code class="formula"><b>PD</b> = FD − Interest payments</code><p>This year's borrowing need, setting aside interest on past debt. Separates present policy from inherited burden.</p></div>
+    <div class="card"><h4>Monetised deficit</h4><code class="formula"><b>MD</b> = Net RBI credit to Government</code><p>Part of FD financed directly by the RBI (new money, or buying government securities directly). Gives flexibility in emergencies; risks inflation if overused.</p></div>
+  </div>
+  <div class="aid"><b>Worked example</b><span>Revenue deficit ₹5 lakh crore. Capital-asset grants ₹1 lakh crore. So ERD = 5 − 1 = <b>₹4 lakh crore</b>.</span></div>
+  <p><b>Monetised deficit and the FRBM Act:</b> routine monetisation is banned, but India keeps the option for rare, well-defined, rule-based situations, as seen during the COVID-19 crisis.</p>
+
+  <h3><span class="n">21</span>Quick comparison</h3>
+  <div class="tbl"><table>
+    <tr><th>Aspect</th><th>Revenue deficit</th><th>Effective revenue deficit</th><th>Fiscal deficit</th><th>Primary deficit</th></tr>
+    <tr><td>Definition</td><td>Revenue expenditure over revenue receipts</td><td>RD minus grants for capital-asset creation</td><td>Total expenditure over total non-borrowed receipts</td><td>FD minus interest payments</td></tr>
+    <tr><td>Focus</td><td>Day-to-day imbalance</td><td>Filters out productive revenue grants</td><td>Overall borrowing requirement</td><td>This year's need, excluding past interest</td></tr>
+    <tr><td>Shows</td><td>Reliance on borrowing for daily operations</td><td>Only the non-asset-creating revenue shortfall</td><td>Total fiscal gap: how much to borrow</td><td>Fresh borrowing beyond the interest burden</td></tr>
+    <tr><td>Policy relevance</td><td>Sustainability of routine governance</td><td>Better indicator of unproductive revenue spending</td><td>Most widely tracked for fiscal discipline</td><td>Fiscal strain excluding debt legacy</td></tr>
+  </table></div>
+
+  <h3><span class="n">▶</span>Try the formulas</h3>
+  <div class="card">
+    <div class="calc">
+      <div>
+        <div class="fields">
+          <label for="i-re">Revenue expenditure<input id="i-re" type="number" value="80000" inputmode="decimal"></label>
+          <label for="i-ce">Capital expenditure<input id="i-ce" type="number" value="0" inputmode="decimal"></label>
+          <label for="i-rr">Revenue receipts<input id="i-rr" type="number" value="60000" inputmode="decimal"></label>
+          <label for="i-nd">Non-debt capital receipts<input id="i-nd" type="number" value="10000" inputmode="decimal"></label>
+          <label for="i-in">Interest payments<input id="i-in" type="number" value="6000" inputmode="decimal"></label>
+          <label for="i-gr">Capital-asset grants<input id="i-gr" type="number" value="0" inputmode="decimal"></label>
+        </div>
+        <p class="hint" style="margin-top:12px">₹ crore. Pre-filled with the numbers from PYQ 26 (2025): revenue expenditure 80,000, revenue receipts 60,000, interest 6,000. The 10,000 non-debt capital receipt is what makes the gap to borrow equal to 10,000, the figure the question treats as fiscal deficit.</p>
+      </div>
+      <div class="out" id="out">
+        <div style="--k:var(--h4)"><span>Revenue deficit<small>Rev exp − Rev receipts</small></span><strong id="o-rd">0</strong></div>
+        <div style="--k:var(--h2)"><span>Effective revenue deficit<small>RD − capital-asset grants</small></span><strong id="o-erd">0</strong></div>
+        <div style="--k:var(--h1)"><span>Fiscal deficit<small>Total exp − (RR + non-debt CR)</small></span><strong id="o-fd">0</strong></div>
+        <div style="--k:var(--h6)"><span>Primary deficit<small>FD − interest</small></span><strong id="o-pd">0</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <h3><span class="n">22</span>Key Budget numbers as printed</h3>
+  <p>From the Ministry of Finance "Key Numbers" slide, ₹ crore. The scan garbled several figures. Cells I could not read with confidence are marked, not guessed.</p>
+  <div class="tbl"><table>
+    <tr><th>₹ crore</th><th class="num">2024–25 Actuals</th><th class="num">2025–26 BE</th><th class="num">2025–26 RE</th><th class="num">2026–27 BE</th></tr>
+    <tr><td>Revenue receipts</td><td class="num dim">unclear</td><td class="num">34,20,409</td><td class="num">33,42,323</td><td class="num dim">unclear</td></tr>
+    <tr><td>Capital receipts</td><td class="num dim">unclear</td><td class="num">16,44,936</td><td class="num">16,22,519</td><td class="num dim">unclear</td></tr>
+    <tr><td>Total receipts</td><td class="num">46,52,867</td><td class="num">50,65,345</td><td class="num">49,64,842</td><td class="num">53,47,315</td></tr>
+    <tr><td>Total expenditure</td><td class="num">46,52,867</td><td class="num">50,65,345</td><td class="num">49,64,842</td><td class="num">53,47,315</td></tr>
+    <tr><td>Effective capital expenditure</td><td class="num">13,24,609</td><td class="num">15,48,282</td><td class="num">14,03,906</td><td class="num">17,14,523</td></tr>
+    <tr><td>Revenue deficit</td><td class="num">5,64,296</td><td class="num">5,23,846</td><td class="num">5,26,764</td><td class="num dim">unclear</td></tr>
+    <tr><td>Effective revenue deficit</td><td class="num">2,91,640</td><td class="num">96,654</td><td class="num dim">unclear</td><td class="num">99,642</td></tr>
+    <tr><td>Fiscal deficit</td><td class="num">15,74,431</td><td class="num">15,68,936</td><td class="num">15,58,492</td><td class="num">16,95,768</td></tr>
+    <tr><td>Primary deficit</td><td class="num">4,58,856</td><td class="num dim">unclear</td><td class="num dim">unclear</td><td class="num">2,91,796</td></tr>
+  </table></div>
+  <p class="src">The same slide set has a "Rupee comes from / goes to" chart, a ministry-wise allocation list, a deficit-trend chart (% of GDP) and a sectoral GVA chart. Their numbers did not survive scanning, so they are not reproduced here.</p>
+</section>
+
+<!-- PART 5 -->
+<section class="part" id="p5" style="--c:var(--h5)">
+  <div class="part-head"><span class="tag">Part E</span><h2>Public debt and off-budget borrowing</h2><p>What the government owes, and what it keeps out of sight.</p></div>
+
+  <h3><span class="n">23</span>Public debt</h3>
+  <p>The total borrowing of the Central or State Government, used in part to finance fiscal deficits. It is the outstanding stock of government liabilities at a point in time.</p>
+  <div class="grid">
+    <div class="card tint"><h4>Internal debt</h4><p>Borrowed from within India: banks, financial institutions, the public.</p></div>
+    <div class="card tint"><h4>External debt</h4><p>Borrowed from foreign governments or multilaterals such as the IMF and World Bank.</p></div>
+  </div>
+  <div class="tbl"><table>
+    <tr><th>By obligation</th><th>Description</th></tr>
+    <tr><td>Public debt (obligatory)</td><td>Debt with a repayment obligation: loans and bonds</td></tr>
+    <tr><td>Other liabilities</td><td>No direct repayment guarantee: small savings, provident funds. "Public debt and other liabilities" includes outstanding amounts against small-savings schemes and PF</td></tr>
+  </table></div>
+
+  <h3><span class="n">24</span>Internal vs external debt</h3>
+  <div class="tbl"><table>
+    <tr><th>Aspect</th><th>Internal debt</th><th>External debt</th></tr>
+    <tr><td>Definition</td><td>Borrowed within the country</td><td>Borrowed from outside India</td></tr>
+    <tr><td>Currency</td><td>Mostly Indian rupees</td><td>Mostly foreign currency: dollar, yen</td></tr>
+    <tr><td>Sources</td><td>Treasury Bills, dated G-Secs, bonds to LIC/banks/public, RBI Ways and Means Advances</td><td>Foreign governments, IMF, World Bank, ADB, ECBs, NRI deposits</td></tr>
+    <tr><td>Risk</td><td>Lower, no exchange-rate risk</td><td>Higher, exposed to forex swings</td></tr>
+    <tr><td>Servicing</td><td>In domestic currency</td><td>Needs foreign-exchange reserves</td></tr>
+    <tr><td>Part of public debt?</td><td class="yes">Yes</td><td>Only <b>sovereign</b> external debt. Not private borrowings or NRI deposits</td></tr>
+    <tr><td>Monitored by</td><td>RBI and Ministry of Finance</td><td>Also tracked by World Bank, IMF</td></tr>
+  </table></div>
+
+  <h3><span class="n">25–26</span>Who manages it, and what high debt does</h3>
+  <p>Managed by the <b>RBI</b> under the <b>Public Debt Act, 1944</b> (with modern fiscal laws updating the framework).</p>
+  <div class="grid">
+    <div class="card"><h4>Higher interest burden</h4><p>Interest payments eat into resources.</p></div>
+    <div class="card"><h4>Crowding out</h4><p>Government borrowing can absorb funds that private business would have used.</p></div>
+    <div class="card"><h4>Rating downgrades</h4><p>High debt can trigger credit-rating cuts.</p></div>
+    <div class="card"><h4>Less fiscal space</h4><p>Less room for future public spending.</p></div>
+  </div>
+
+  <h3><span class="n">27</span>Off-budget borrowing</h3>
+  <p>Loans and liabilities incurred to fund schemes or capital spending but not shown as ordinary government borrowing in the Budget. Raised through PSUs or special-purpose vehicles.</p>
+  <div class="tbl"><table>
+    <tr><th>Feature</th><th>Details</th></tr>
+    <tr><td>Definition</td><td>Borrowings outside the Consolidated Fund of India, not disclosed in the Union Budget</td></tr>
+    <tr><td>Instruments</td><td>PSU loans, government guarantees for loans, bonds by FCI, Power Finance Corporation (PFC) and others</td></tr>
+    <tr><td>Purpose</td><td>Fund welfare schemes, infrastructure, subsidies (food, fertiliser, petroleum) without raising the officially reported fiscal deficit</td></tr>
+    <tr><td>Example</td><td>FCI borrows from the National Small Savings Fund (NSSF) for the food subsidy instead of getting a direct Budget allocation</td></tr>
+  </table></div>
+  <p><b>Concern:</b> the headline fiscal deficit can look smaller than the government's real obligations.</p>
+</section>
+
+<!-- PART 6 -->
+<section class="part" id="p6" style="--c:var(--h6)">
+  <div class="part-head"><span class="tag">Part F</span><h2>FRBM Act and fiscal consolidation</h2><p>Rules that tried to tie the government's hands, and the road back to discipline.</p></div>
+
+  <h3><span class="n">28</span>FRBM Act, 2003</h3>
+  <div class="aid"><b>Background</b><span>Before 2003: high fiscal deficits, unsustainable debt, weak discipline. Post-1991 reforms showed the need for rules-based fiscal policy. The Act aims at transparency, responsibility and macro stability.</span></div>
+  <div class="tl">
+    <div style="--c:var(--h6)"><b>2003</b>Original targets: <b style="display:inline;font-size:1em">Revenue deficit 0% by 2008</b>, <b style="display:inline;font-size:1em">Fiscal deficit 3% of GDP by 2009</b>.</div>
+    <div style="--c:var(--h1)"><b>2012</b>Amendment: FD 3% by 2017, RD below 2% by 2015, ERD 0% by 2015. Medium Term Expenditure Framework (3-year rolling).</div>
+    <div style="--c:var(--h2)"><b>2017</b>N.K. Singh Committee: debt-to-GDP anchor, escape clause, Fiscal Council.</div>
+    <div style="--c:var(--h3)"><b>2020 →</b>Targets suspended after COVID-19. Gradual return to the path.</div>
+  </div>
+  <h4>Provisions of the 2003 Act</h4>
+  <ul><li>Reduce deficits and manage public debt.</li><li>Government places <b>three documents</b> every year: Medium-Term Fiscal Policy Statement (MTFPS), Fiscal Policy Strategy Statement (FPSS), Macroeconomic Framework Statement (MFS).</li><li>RBI is <b>prohibited from directly financing</b> the fiscal deficit (no primary issuances).</li></ul>
+  <h4>Criticism</h4>
+  <ul><li>Targets repeatedly missed or postponed after external shocks such as the global financial crisis.</li><li>Too rigid in downturns.</li><li>Ignored quality of expenditure: was the deficit for consumption or investment?</li><li>Did not account for cyclical swings in the economy.</li></ul>
+
+  <h3><span class="n">29</span>FRBM Amendment, 2012</h3>
+  <p>Allowed postponement of the 3% goal and added more realistic timeframes. It introduced <b>Effective Revenue Deficit</b> and the <b>Medium Term Expenditure Framework</b>.</p>
+  <div class="grid">
+    <div class="card"><h4>Fiscal deficit</h4><p>3% of GDP by 2017</p></div>
+    <div class="card"><h4>Revenue deficit</h4><p>Below 2% of GDP by 2015</p></div>
+    <div class="card"><h4>Effective revenue deficit</h4><p>0% of GDP by 2015</p></div>
+  </div>
+
+  <h3><span class="n">30</span>N.K. Singh Committee (FRBM Review, 2017)</h3>
+  <div class="tbl"><table>
+    <tr><th>Area</th><th>Recommendation</th></tr>
+    <tr><td>Shift from fixed targets</td><td>Debt-to-GDP anchor of <b>60%</b> combined: <b>40% Centre</b> and <b>20% States</b>, with fiscal deficit as the operational target</td></tr>
+    <tr><td>Fiscal deficit glide path</td><td>Gradual reduction, FD to 2.5% of GDP by 2023 (revised due to the pandemic)</td></tr>
+    <tr><td>Revenue deficit</td><td>Remove the RD target. Focus on overall fiscal health</td></tr>
+    <tr><td>Escape clause</td><td>Deviation up to <b>0.5% of GDP</b> for national emergency, war, natural disaster and similar</td></tr>
+    <tr><td>Fiscal Council</td><td>Independent Fiscal Council for oversight</td></tr>
+  </table></div>
+
+  <h3><span class="n">31</span>Present status, as stated in the source (2025–26)</h3>
+  <div class="tbl"><table>
+    <tr><th>Item</th><th>Status</th></tr>
+    <tr><td>FRBM targets</td><td>Suspended due to COVID-19 from 2020; deficit targets overshot</td></tr>
+    <tr><td>Fiscal deficit</td><td>2024–25 RE: 4.8% of GDP (Centre) against a 3% target. 2025–26 BE: 4.4%</td></tr>
+    <tr><td>Revenue deficit</td><td>Still high. ERD now less discussed</td></tr>
+    <tr><td>Compliance</td><td>Gradual return to the path. 3% target deferred to 2025–26 or beyond</td></tr>
+    <tr><td>Fiscal Council</td><td>Not yet established. Still under consideration</td></tr>
+  </table></div>
+  <p class="src">These are time-stamped claims reproduced from the source, not independently updated.</p>
+
+  <h3><span class="n">32</span>Fiscal consolidation</h3>
+  <p>Reducing deficits and debt in a sustainable way. It supports fiscal discipline, macro stability and intergenerational equity. In simple words: control the fiscal deficit and debt by improving revenue and rationalising spending.</p>
+  <div><span class="pill">Reduces interest burden</span><span class="pill">Frees resources for development</span><span class="pill">Improves investor confidence</span><span class="pill">Macro stability</span><span class="pill">Avoids debt trap</span></div>
+  <div class="tbl"><table>
+    <tr><th>Strategy</th><th>Explanation</th></tr>
+    <tr><td>1 · Revenue enhancement</td><td>Widen tax base (GST, compliance). Raise non-tax revenue: dividends, disinvestment, spectrum auctions</td></tr>
+    <tr><td>2 · Rationalise expenditure</td><td>Targeted subsidies through DBT, cut waste, cap growth in revenue expenditure</td></tr>
+    <tr><td>3 · Disinvestment & monetisation</td><td>Strategic sale of PSUs, monetise idle public assets</td></tr>
+    <tr><td>4 · Control fiscal deficit</td><td>Follow FRBM targets and Medium-Term Fiscal Policy Statements</td></tr>
+    <tr><td>5 · Efficient debt management</td><td>Long-term, low-cost borrowing. Avoid off-budget borrowing</td></tr>
+    <tr><td>6 · Subsidy reforms</td><td>Petroleum, fertiliser, food subsidy rationalisation</td></tr>
+    <tr><td>7 · Transparency & Budget reforms</td><td>Gender budgeting, outcome budgeting, performance-based budgeting</td></tr>
+  </table></div>
+
+  <h3><span class="n">33</span>Zero-Base Budgeting (ZBB)</h3>
+  <div class="aid"><b>Memory line</b><span>"Start from zero, justify every rupee." No department automatically gets last year's allocation.</span></div>
+  <div class="grid">
+    <div class="card"><h4>No carry-forward</h4><p>Past spending is not automatically approved.</p></div>
+    <div class="card"><h4>Bottom-up</h4><p>Budget built from the operational level upward.</p></div>
+    <div class="card"><h4>Justify every activity</h4><p>Each unit defends its entire budget.</p></div>
+    <div class="card"><h4>Weigh alternatives</h4><p>Compare ways to reach an objective.</p></div>
+    <div class="card"><h4>Optimise resources</h4><p>Remove wasteful or redundant spending.</p></div>
+  </div>
+
+  <h3><span class="n">34</span>Outcome Budget</h3>
+  <p>A performance-based tool linking money to measurable results. It asks not only "how much was spent?" but "what was delivered, and what changed?" Goals: accountability and transparency, a shift from inputs to outputs and outcomes, and better monitoring of schemes.</p>
+  <div class="tbl"><table>
+    <tr><th>Component</th><th>Meaning</th></tr>
+    <tr><td>Outlay</td><td>Money allocated in the Budget</td></tr>
+    <tr><td>Output</td><td>Physical deliverable: km of road built, schools constructed</td></tr>
+    <tr><td>Outcome</td><td>Final result: reduced travel time, improved literacy</td></tr>
+    <tr><td>Indicators</td><td>Measurable metrics for progress</td></tr>
+    <tr><td>Timeline</td><td>Year-wise targets and milestones</td></tr>
+  </table></div>
+  <div class="tbl"><table>
+    <tr><th>Scheme</th><th class="num">Outlay</th><th>Output</th><th>Outcome</th></tr>
+    <tr><td>PMGSY</td><td class="num">₹10,000 cr</td><td>10,000 km of rural roads</td><td>Better rural connectivity, less travel time</td></tr>
+    <tr><td>Mid-Day Meal</td><td class="num">₹12,000 cr</td><td>Meals for 10 crore students</td><td>Higher attendance, better nutrition</td></tr>
+  </table></div>
+  <div class="aid"><b>ZBB vs Outcome</b><span>ZBB asks whether every expense is justified from zero. Outcome Budget asks what results the money bought.</span></div>
+</section>
+
+<!-- PART 7 -->
+<section class="part" id="p7" style="--c:var(--h7)">
+  <div class="part-head"><span class="tag">Part G</span><h2>Public revenue and taxation</h2><p>Where the money comes from, and why taxes are shaped the way they are.</p></div>
+
+  <h3><span class="n">35</span>Public revenue</h3>
+  <p>Income received from all sources for public expenditure, <b>excluding borrowings</b>.</p>
+  <div class="grid">
+    <div class="card tint"><h4>Tax revenue</h4><p>Compulsory payments with no direct quid pro quo.</p><p>Income Tax, GST, Customs Duty.</p></div>
+    <div class="card tint"><h4>Non-tax revenue</h4><p>Income from sources other than taxes.</p><p>Fees, fines, PSU dividends, interest on loans to States.</p></div>
+  </div>
+
+  <h3><span class="n">36–37</span>Taxation: meaning, features, objectives</h3>
+  <p>A compulsory contribution imposed by lawful authority to fund public spending. The taxpayer gets no direct, equal service for each payment. Benefits arrive indirectly as public services. It is the biggest revenue source for modern governments and a key tool of fiscal policy.</p>
+  <div class="grid">
+    <div class="card"><h4>Features</h4><ul><li>Compulsory for eligible taxpayers</li><li>Imposed by lawful authority: Parliament or a State Legislature</li><li>No direct return (non-quid pro quo)</li><li>Primary income stream</li></ul></div>
+    <div class="card"><h4>Economic objectives</h4><ul><li>Mobilise resources for public expenditure</li><li>Reduce income and wealth inequality</li><li>Control inflation / manage aggregate demand</li></ul></div>
+    <div class="card"><h4>Governance objectives</h4><ul><li>Strengthen the state's fiscal capacity</li><li>Nudge behaviour: sin tax, green tax</li><li>Promote investment in priority sectors</li></ul></div>
+  </div>
+
+  <h3><span class="n">38</span>Direct vs indirect tax</h3>
+  <div class="tbl"><table>
+    <tr><th></th><th>Direct tax</th><th>Indirect tax</th></tr>
+    <tr><td>Who pays</td><td>The person or entity on whom it is legally imposed</td><td>Imposed on one person, burden shifted to another</td></tr>
+    <tr><td>Shifting</td><td>Cannot be shifted</td><td>Passed on through price</td></tr>
+    <tr><td>Impact vs incidence</td><td>Both fall on the same person</td><td>Impact on seller/importer; incidence on the consumer</td></tr>
+    <tr><td>Examples</td><td>Income Tax, Corporate Tax, Capital Gains Tax</td><td>GST, Customs Duty, Excise Duty</td></tr>
+  </table></div>
+
+  <h3><span class="n">39</span>Key taxation terms</h3>
+  <div class="grid">
+    <div class="card"><h4>Tax base</h4><p>Total income, assets, goods or services on which tax is levied. Broader base means a more efficient, less distortionary system.</p></div>
+    <div class="card"><h4>Tax rate</h4><p>Percentage or fixed amount per unit of base. Proportional, progressive or regressive.</p></div>
+    <div class="card"><h4>Tax haven</h4><p>Low or zero tax plus financial secrecy to attract foreign funds. Used for avoidance or base erosion. Cayman Islands, Bermuda, Panama.</p></div>
+  </div>
+
+  <h4 style="margin-top:20px">Progressive, proportional, regressive</h4>
+  <div class="tbl"><table>
+    <tr><th>Aspect</th><th>Progressive</th><th>Regressive</th><th>Proportional (flat)</th></tr>
+    <tr><td>Definition</td><td>Rate rises as income rises</td><td>Burden falls as % of income as income rises</td><td>Same rate for all</td></tr>
+    <tr><td>Who bears more</td><td>High earners pay a higher %</td><td>Low earners pay a higher %</td><td>All pay the same %</td></tr>
+    <tr><td>Equity</td><td>Promotes equality</td><td>Increases inequality</td><td>Neutral, weak redistribution</td></tr>
+    <tr><td>Example</td><td>Income Tax (India)</td><td>Excise duty on fuel, GST on essentials</td><td>Professional Tax (flat ₹200/month), some GSTs</td></tr>
+    <tr><td>Used for</td><td>Redistribution, economic justice</td><td>Quick revenue, consumption-based taxation</td><td>Simple, predictable systems</td></tr>
+  </table></div>
+  <div class="grid">
+    <div class="card"><h4>Progressive, hypothetical slabs</h4><p>₹0–2.5 lakh → 0%<br>₹2.5–5 lakh → 5%<br>₹5–10 lakh → 20%<br>₹10 lakh+ → 30%</p></div>
+    <div class="card"><h4>Proportional, flat 10%</h4><p>Income ₹2,00,000 → tax ₹20,000<br>Income ₹10,00,000 → tax ₹1,00,000</p></div>
+    <div class="card tint"><h4>Regressive, why it bites</h4><p>Fuel ₹100/litre includes ₹50 tax. Poor person earns ₹1,000/month: ₹50 is <b>5%</b> of income. Rich person earns ₹10,000/month: ₹50 is <b>0.5%</b>.</p></div>
+  </div>
+
+  <h3><span class="n">40</span>Tax, surcharge, cess</h3>
+  <div class="tbl"><table>
+    <tr><th>Aspect</th><th>Tax</th><th>Surcharge</th><th>Cess</th></tr>
+    <tr><td>Definition</td><td>Compulsory charge for general revenue</td><td>Additional charge on an existing tax</td><td>Additional charge for a specific purpose</td></tr>
+    <tr><td>Levied on</td><td>Income, consumption, wealth</td><td>The tax amount, not income directly</td><td>Existing taxes</td></tr>
+    <tr><td>Purpose</td><td>General government spending</td><td>Raise more from high earners</td><td>Targeted schemes: education, health</td></tr>
+    <tr><td>Shared with States</td><td class="yes">Yes, via Finance Commission</td><td class="no">No</td><td class="no">No</td></tr>
+    <tr><td>Permanent?</td><td>Usually yes</td><td>Generally yes</td><td>Typically temporary, scheme-specific</td></tr>
+    <tr><td>Example</td><td>Income Tax, GST, Excise</td><td>15% surcharge on income tax above ₹1 crore</td><td>4% Health & Education Cess on income tax</td></tr>
+  </table></div>
+  <p>A cess is collected in the Consolidated Fund but spent only for its earmarked purpose, and discontinued once the purpose is met.</p>
+
+  <h3><span class="n">41</span>Evasion, avoidance, planning</h3>
+  <div class="tbl"><table>
+    <tr><th>Aspect</th><th>Tax evasion</th><th>Tax avoidance</th><th>Tax planning</th></tr>
+    <tr><td>Legality</td><td class="no">Illegal, punishable</td><td>Legal but ethically questionable</td><td class="yes">Legal and encouraged</td></tr>
+    <tr><td>Nature</td><td>Fraud, misreporting, hiding income</td><td>Exploits loopholes without breaking the letter of the law</td><td>Uses lawful deductions and exemptions</td></tr>
+    <tr><td>Examples</td><td>Hiding income, fake invoices, under-reporting assets, undeclared rent, fake medical bills, hidden foreign accounts</td><td>Shifting income to tax havens, shell companies, investing only for deductions</td><td>Sections 80C (LIC, PPF), 80D (health), 80G (donations)</td></tr>
+    <tr><td>Penalty</td><td>Fines, interest, imprisonment</td><td>None (may be disallowed in audit)</td><td>None</td></tr>
+  </table></div>
+
+  <h3><span class="n">42</span>Black money</h3>
+  <p>Unaccounted income or wealth not reported to tax authorities. Not taxed, not disclosed.</p>
+  <div class="grid">
+    <div class="card"><h4>Sources</h4><p><b>Legal but hidden:</b> under-invoicing, real-estate undervaluation, unreported business income.</p><p><b>Illegal:</b> bribery, smuggling, hawala, drug trade, betting, extortion.</p></div>
+    <div class="card"><h4>Impacts</h4><ul><li>Loss of tax revenue</li><li>Distorted income distribution and data</li><li>Promotes corruption and a parallel economy</li><li>Weakens monetary and fiscal policy</li></ul></div>
+  </div>
+  <h4 style="margin-top:14px">Steps to curb it</h4>
+  <div class="grid">
+    <div class="card tint"><h4>Law and enforcement</h4><ul><li>Black Money (Undisclosed Foreign Income and Assets) Act, 2015</li><li>Benami Transactions (Prohibition) Amendment Act, 2016</li><li>Stronger PMLA provisions</li></ul></div>
+    <div class="card tint"><h4>Policy</h4><ul><li>Demonetisation (2016)</li><li>PAN–Aadhaar linking</li><li>Income Declaration Schemes</li></ul></div>
+    <div class="card tint"><h4>Administration and tech</h4><ul><li>Digital payments push</li><li>Operation Clean Money</li><li>Tighter reporting of high-value transactions</li></ul></div>
+  </div>
+
+  <h3><span class="n">43</span>Trade remedies: anti-dumping and countervailing duty</h3>
+  <div class="grid">
+    <div class="card"><h4>Anti-dumping duty</h4><ul><li>Protects domestic industry from <b>dumped</b> imports (sold in India below normal value in the exporter's market)</li><li>Levied on top of normal customs duty</li><li>After investigation by <b>DGTR</b> (Ministry of Commerce)</li><li>Based on WTO Agreement on Anti-Dumping (GATT 1994)</li><li>Duty = Normal Value − Export Price to India</li><li>Valid generally for 5 years, extendable after review</li><li>Section 9A, Customs Tariff Act, 1975</li><li>Example: Chinese steel, solar cells, certain chemicals</li></ul></div>
+    <div class="card"><h4>Countervailing duty (CVD)</h4><ul><li>Offsets <b>subsidies</b> given by exporting countries</li><li>Under the Customs Tariff Act, 1975, in line with WTO Agreement on Subsidies and Countervailing Measures</li><li>DGTR recommends; Government of India imposes</li><li>Neutralises the price advantage of subsidised imports</li><li>Example: steel from a country subsidising its makers</li><li>With GST, CVD was subsumed into IGST on imports</li></ul></div>
+  </div>
+
+  <h3><span class="n">44</span>Transfer pricing and APA</h3>
+  <div class="grid">
+    <div class="card"><h4>Transfer pricing</h4><p>Pricing of goods, services or intangibles moved between related entities of a multinational in different tax jurisdictions. Risk: shifting profits to low-tax countries (<b>BEPS</b>, Base Erosion and Profit Shifting).</p><p>India: Sections 92 to 92F, Income Tax Act, 1961, on the <b>Arm's Length Principle</b>: price as if between unrelated parties.</p><p><b>Example:</b> an Indian subsidiary sells software to its foreign parent at an artificially low price.</p></div>
+    <div class="card"><h4>Advance Pricing Agreement (APA)</h4><p>A pre-agreed transfer-pricing method between taxpayer and tax authority for a fixed period. Brings certainty, avoids disputes.</p><ul><li><b>Unilateral:</b> taxpayer + CBDT</li><li><b>Bilateral:</b> taxpayer, CBDT, another country's authority (tax treaty)</li><li><b>Multilateral:</b> several countries</li></ul><p>Benefits: less litigation, certainty, trust. Introduced by Finance Act 2012, Section 92CC.</p></div>
+  </div>
+
+  <h3><span class="n">45</span>Laffer curve</h3>
+  <p>Shows the link between tax rates and tax revenue. Past a point, higher rates cut total revenue because they discourage work, investment and compliance, and encourage evasion.</p>
+  <div class="grid">
+    <div class="card"><h4>Key idea</h4><p>At 0% tax, revenue = 0. At 100% tax, revenue = 0. Maximum revenue sits at an optimal rate between the two. Popularised by Arthur Laffer in the 1970s.</p></div>
+    <div class="card"><h4>Policy and criticism</h4><p>Avoid excessively high rates that shrink the base. Example: India's 2019 corporate tax cut. Criticism: the optimal rate isn't fixed; it varies by economy, compliance culture and time.</p></div>
+  </div>
+
+  <h3><span class="n">46</span>Fiscal drag</h3>
+  <p>Inflation-driven income growth pushes taxpayers into higher brackets (bracket creep), raising their tax burden even if real income hasn't improved.</p>
+  <div class="aid"><b>Chain</b><span>High inflation → higher nominal income → higher tax burden → lower spending → economic slowdown (fiscal drag).</span></div>
+  <ul><li><b>Impact:</b> acts as an automatic stabiliser by restraining demand in inflation, but can slow recovery if it cuts demand too much.</li><li><b>Remedy:</b> index tax brackets to inflation; adjust allowances and deductions.</li></ul>
+
+  <h3><span class="n">47</span>Tax-to-GDP ratio</h3>
+  <p>Share of total tax revenue (direct + indirect) in GDP. It measures tax mobilisation capacity and fiscal strength. A higher ratio gives more fiscal space for welfare and infrastructure; a low ratio means more borrowing and less policy room.</p>
+  <div class="grid">
+    <div class="card tint"><h4>India (2023–24 est.)</h4><p>Centre + States: about <b>11–12%</b><br>Centre alone: about <b>6–7%</b><br>OECD average: about <b>34%</b></p></div>
+    <div class="card"><h4>Why it is low in India</h4><ul><li>Large informal sector</li><li>Low tax compliance</li><li>Agricultural income largely untaxed</li><li>Multiple exemptions and incentives</li></ul></div>
+  </div>
+
+  <h3><span class="n">48–49</span>Tax buoyancy and tax elasticity</h3>
+  <div class="grid">
+    <div class="card"><h4>Tax buoyancy</h4><p>Responsiveness of tax revenue growth to GDP growth.</p><ul><li><b>&gt; 1:</b> revenue grows faster than GDP (good: rising compliance or rates)</li><li><b>= 1:</b> same pace</li><li><b>&lt; 1:</b> slower than GDP (weak buoyancy)</li></ul><p>Shows tax-system efficiency and helps forecast revenue. A tax is buoyant when it collects more without any change in rate.</p></div>
+    <div class="card"><h4>Tax elasticity</h4><p>How much tax revenue or the tax base changes when the tax rate changes. It gauges how sensitive taxpayers are.</p><p>High elasticity: a small rate change causes a large change in the base. Low elasticity: the base barely responds.</p></div>
+  </div>
+</section>
+
+<!-- PART 8 -->
+<section class="part" id="p8" style="--c:var(--h8)">
+  <div class="part-head"><span class="tag">Part H</span><h2>Goods and Services Tax (GST)</h2><p>"One Nation, One Tax, One Market."</p></div>
+
+  <h3><span class="n">50</span>Core idea</h3>
+  <p>A comprehensive indirect tax on the supply of goods and services. It merged most indirect taxes of the Union and States, charges tax on value addition at each stage, and reduces tax-on-tax (cascading).</p>
+  <div class="tl">
+    <div style="--c:var(--h8)"><b>101st</b>Constitutional Amendment Act, 2016</div>
+    <div style="--c:var(--h2)"><b>Art. 279A</b>GST Council</div>
+    <div style="--c:var(--h6)"><b>1 Jul 2017</b>Effective date</div>
+    <div style="--c:var(--h4)"><b>Dual GST</b>CGST + SGST intra-State, IGST inter-State</div>
+  </div>
+  <p><b>Replaced:</b> excise duty, VAT, service tax, octroi, entry tax and others.</p>
+  <h4>Input Tax Credit (ITC)</h4>
+  <p>Credit a business claims for GST paid on its purchases, to reduce GST on its sales. Purpose: avoid cascading, so tax falls only on the value added at each stage.</p>
+  <div class="aid"><b>Example</b><span>A manufacturer pays ₹300 GST on raw materials and collects ₹450 GST on the final product. After claiming ₹300 as ITC, it pays the government only <b>₹150</b>.</span></div>
+
+  <h3><span class="n">51</span>Administration: the four GSTs</h3>
+  <div class="grid">
+    <div class="card"><h4>CGST</h4><p>Central GST, levied by the Centre.</p></div>
+    <div class="card"><h4>SGST</h4><p>State GST, levied by States.</p></div>
+    <div class="card"><h4>UTGST</h4><p>For Union Territories without a legislature.</p></div>
+    <div class="card"><h4>IGST</h4><p>Inter-State supplies and imports. Apportioned between the Centre and the destination State.</p></div>
+  </div>
+  <p style="margin-top:12px">CGST and SGST are levied together on a common base across the value chain, a dual model that suits India's federal structure.</p>
+
+  <h3><span class="n">52</span>Destination-based tax</h3>
+  <p>Revenue accrues to the State where the goods or services are <b>consumed</b>, not where they are produced.</p>
+  <div class="tbl"><table>
+    <tr><th>Old system (origin-based)</th><th>GST (destination-based)</th></tr>
+    <tr><td>Producing State gets revenue</td><td>Consuming State gets revenue</td></tr>
+    <tr><td>Excise Duty, Central Sales Tax (CST)</td><td>IGST, shared with the consuming State</td></tr>
+  </table></div>
+  <div class="aid"><b>Example</b><span>A product made in Gujarat is sold to a customer in Kerala. Kerala, the consuming State, gets the tax through IGST settlement. Gujarat gets nothing from that transaction.</span></div>
+
+  <h3><span class="n">53</span>GST Council</h3>
+  <p>Constitutional body (101st Amendment, 2016) that recommends on rates, exemptions, thresholds and model laws.</p>
+  <div class="grid">
+    <div class="card"><h4>Composition</h4><ul><li>Union Finance Minister: Chairperson</li><li>Union Minister of State (Finance): Member</li><li>Finance/Taxation Minister of each State: Members</li></ul></div>
+    <div class="card tint"><h4>Voting</h4><ul><li>Centre: <b>1/3</b> weight (33%)</li><li>States combined: <b>2/3</b> weight (66%)</li><li>Decisions need a <b>3/4 majority</b> (75%)</li></ul></div>
+    <div class="card"><h4>Functions</h4><ul><li>Recommend rates, exemptions, thresholds</li><li>Decide GST laws, rules, procedures</li><li>Resolve inter-State issues and disputes</li><li>Special provisions for North-Eastern and hill States</li><li>Compensation to States (first 5 years)</li><li>Rate rationalisation, fixing inverted duty</li></ul></div>
+    <div class="card"><h4>Significance</h4><ul><li>Cooperative federalism</li><li>Consensus-based tax governance</li><li>Uniform indirect taxation</li><li>Delivers "One Nation, One Tax, One Market"</li><li>Eases compliance</li></ul></div>
+  </div>
+
+  <h3><span class="n">54</span>Applicability and thresholds</h3>
+  <ul><li>Applies to all goods and services <b>except alcohol for human consumption</b>.</li><li>Five petroleum products (crude oil, petrol, diesel, natural gas, ATF): GST from a date the Council will notify.</li><li>Exempt: certain essentials such as education, healthcare, milk, fresh fruits.</li><li>Exports are <b>zero-rated</b>: no GST, and ITC is refundable.</li></ul>
+  <div class="tbl"><table>
+    <tr><th>Threshold exemption</th><th class="num">Goods</th><th class="num">Services</th></tr>
+    <tr><td>Normal States</td><td class="num">₹40 lakh</td><td class="num">₹20 lakh</td></tr>
+    <tr><td>Special category (NE and hill) States</td><td class="num">₹20 lakh</td><td class="num">₹10 lakh</td></tr>
+  </table></div>
+
+  <h3><span class="n">55</span>Taxes subsumed and not subsumed</h3>
+  <div class="grid">
+    <div class="card tint"><h4>Central, subsumed</h4><ul><li>Central Excise Duty (except petroleum and tobacco)</li><li>Service Tax</li><li>Additional Excise Duties</li><li>Excise duty under Medicinal & Toiletries Act</li><li>Countervailing Duty (CVD)</li><li>Special Additional Duty of Customs (SAD)</li><li>Central cesses and surcharges on supply</li></ul></div>
+    <div class="card"><h4>Central, not subsumed</h4><ul><li>Basic Customs Duty, still levied on imports</li><li>Petroleum products until the Council recommends</li><li>Cesses on petroleum, tobacco, coal</li></ul></div>
+    <div class="card tint"><h4>State, subsumed</h4><ul><li>VAT / Sales Tax (except petroleum, alcohol)</li><li>Central Sales Tax (CST)</li><li>Purchase Tax</li><li>Luxury Tax</li><li>Entry Tax (octroi)</li><li>Entertainment Tax (except by local bodies)</li><li>Taxes on advertisements</li><li>State cesses and surcharges on supply</li></ul></div>
+    <div class="card"><h4>State, not subsumed</h4><ul><li>Alcohol for human consumption, fully outside GST</li><li>Stamp duty and registration duty on immovable property</li><li>Real-estate transactions (though works contracts and construction services are under GST)</li><li>Electricity duty</li><li>Vehicle / road tax</li><li>Tolls and user charges by local bodies</li></ul></div>
+  </div>
+
+  <h3><span class="n">56</span>Rate slabs after GST 2.0</h3>
+  <div class="grid">
+    <div class="card" style="border-top:6px solid var(--h5)"><h4>5%</h4><p>Household essentials (soaps, toothpaste, Indian breads), life-saving drugs (down from 12%), farm machinery and irrigation equipment (down from 12%). Some at Nil.</p></div>
+    <div class="card" style="border-top:6px solid var(--h4)"><h4>18%</h4><p>Middle-class items: two-wheelers, small cars, TVs, ACs, cement (down from 28%).</p></div>
+    <div class="card" style="border-top:6px solid var(--h8)"><h4>40%</h4><p>Sin and luxury goods: tobacco, pan masala, aerated drinks, luxury goods.</p></div>
+  </div>
+  <p style="margin-top:12px">Structure: two slabs, 5% and 18%, plus the 40% rate. Petroleum is in GST constitutionally but not yet levied. Alcohol is outside GST by constitutional design.</p>
+  <h4>Revenue Neutral Rate (RNR)</h4>
+  <p>The single GST rate at which total tax revenue stays the same as before GST. It ensures no revenue loss for Centre and States in the transition. Calculated from pre-GST revenue (Excise, Service Tax, VAT and others), adjusted for credit. India's RNR was recommended at <b>15–15.5%</b> by the Subramanian Committee (2015). It guided the earlier 5/12/18/28 slabs.</p>
+
+  <h3><span class="n">57</span>GSTN, returns and GSTIN</h3>
+  <div class="grid">
+    <div class="card"><h4>GST Network (GSTN)</h4><p>Not-for-profit Section 8 company under the Companies Act, 2013, giving IT infrastructure to Centre, States and taxpayers. Initially 51% private and 49% government; since 2018, 100% government-owned (shared equally by Centre and States).</p><p>Provides the common portal: registration, returns, payments, refunds, invoice and ITC matching. Integrates with CBDT, Customs, banks. Ensures uniform administration and curbs evasion through invoice matching.</p></div>
+    <div class="card"><h4>GSTIN: 15 digits</h4><ul><li>Digits 1–2: State code (32 = Kerala)</li><li>Next 10: PAN of the taxpayer</li><li>13th: entity code (number of registrations of that PAN in the State)</li><li>14th: "Z" by default, kept for future use</li><li>15th: checksum for error detection</li></ul><code class="formula">32ABCDE1234F1Z5</code></div>
+  </div>
+  <p>A tax return is a form reporting income and expenses so the government can compute tax due or refund. GST returns are periodic filings of sales, purchases and tax liability, filed through the GSTN portal. They are the basis for assessment and ITC claims.</p>
+  <div class="tbl"><table>
+    <tr><th>Return</th><th>For</th></tr>
+    <tr><td>GSTR-1</td><td>Outward supplies (sales), monthly/quarterly</td></tr>
+    <tr><td>GSTR-2A/2B</td><td>Auto-generated inward supplies (purchases)</td></tr>
+    <tr><td>GSTR-3B</td><td>Summary: tax liability and ITC claim, monthly/quarterly</td></tr>
+    <tr><td>GSTR-4</td><td>Annual return, composition taxpayers</td></tr>
+    <tr><td>GSTR-5</td><td>Non-resident taxable persons</td></tr>
+    <tr><td>GSTR-6</td><td>Input Service Distributors</td></tr>
+    <tr><td>GSTR-7</td><td>Entities deducting TDS under GST</td></tr>
+    <tr><td>GSTR-8</td><td>E-commerce operators collecting TCS</td></tr>
+    <tr><td>GSTR-9</td><td>Annual return, regular taxpayers</td></tr>
+    <tr><td>GSTR-9C</td><td>GST audit reconciliation statement</td></tr>
+    <tr><td>GSTR-10</td><td>Final return on cancellation of registration</td></tr>
+    <tr><td>GSTR-11</td><td>Taxpayers with a UIN (embassies, UN bodies)</td></tr>
+  </table></div>
+
+  <h3><span class="n">58–60</span>Reverse charge, inverted duty, e-way bill</h3>
+  <div class="grid">
+    <div class="card"><h4>Reverse Charge Mechanism</h4><p>The liability to pay GST shifts from the supplier to the <b>recipient</b>.</p><ul><li>Specified notified goods/services</li><li>Import of services</li><li>Purchases from unregistered dealers in certain cases</li></ul><p>Recipient pays in <b>cash</b> (ITC can't pay it) but can later claim ITC on it if used for business. Aim: curb evasion, bring unorganised sectors into the net.</p></div>
+    <div class="card"><h4>Inverted duty structure</h4><p>GST on inputs is <b>higher</b> than GST on the finished product.</p><p>Result: unused ITC piles up and working capital gets blocked.</p><p>Example: raw material 18%, finished product 12%. Remedy: refund of unutilised ITC under Section 54(3) CGST Act (not for certain goods such as textiles in notified cases).</p></div>
+    <div class="card"><h4>E-way bill</h4><p>Electronic document for moving goods valued above <b>₹50,000</b>, generated on the GSTN portal, SMS, mobile app or API. Unique E-Way Bill Number (EBN) goes to supplier, recipient and transporter.</p><p><b>Validity:</b> 1 day up to 200 km, +1 day per additional 200 km. Over-dimensional cargo: 1 day per 20 km.</p></div>
+  </div>
+  <div class="grid" style="margin-top:14px">
+    <div class="card"><h4>E-way bill: who generates</h4><p>Supplier or recipient if moving goods themselves. Transporter if neither has done so.</p></div>
+    <div class="card"><h4>E-way bill: exemptions</h4><p>Goods ≤ ₹50,000; non-motorised vehicles; specified goods (fresh fruit, vegetables, milk); special cases such as customs-bonded movement.</p></div>
+    <div class="card"><h4>Objectives and issues</h4><p>Prevent evasion, track movement in real time, smooth logistics. Challenges: technical glitches, compliance delays. Linking to FASTag and AI fraud detection could help.</p></div>
+  </div>
+
+  <h3><span class="n">61</span>Composition scheme</h3>
+  <p>A simplified regime for small taxpayers to cut compliance burden.</p>
+  <div class="tbl"><table>
+    <tr><th>Taxpayer</th><th class="num">Turnover limit</th><th class="num">Rate</th></tr>
+    <tr><td>Manufacturers and traders</td><td class="num">₹1.5 crore (₹75 lakh in NE and hill States)</td><td class="num">1%</td></tr>
+    <tr><td>Restaurants (no alcohol)</td><td class="num">₹1.5 crore</td><td class="num">5%</td></tr>
+    <tr><td>Service providers (incl. mixed suppliers)</td><td class="num">₹50 lakh</td><td class="num">6%</td></tr>
+  </table></div>
+  <div class="grid">
+    <div class="card"><h4>Features</h4><ul><li>Fixed % of turnover</li><li>Cannot collect GST from customers</li><li>No tax invoice: issues a Bill of Supply</li><li>No ITC</li><li>Quarterly CMP-08, annual GSTR-4</li><li>Must display "composition taxable person"</li></ul></div>
+    <div class="card"><h4>Not eligible</h4><ul><li>Inter-State suppliers</li><li>E-commerce operators</li><li>Makers of notified goods: ice cream, pan masala, tobacco</li><li>Suppliers of goods not taxable under GST (alcohol)</li><li>Casual or non-resident taxable persons</li></ul></div>
+  </div>
+
+  <h3><span class="n">62</span>QRMP scheme</h3>
+  <p>Quarterly Return, Monthly Payment, for taxpayers with turnover up to <b>₹5 crore</b>. Optional.</p>
+  <div class="grid">
+    <div class="card"><h4>How it works</h4><ul><li>GSTR-3B filed <b>quarterly</b></li><li>Tax paid <b>monthly</b>: fixed-sum method (pre-filled challan, about 35% of last quarter's tax) or self-assessment on actual liability</li><li>B2B invoices uploaded monthly for the first 2 months of a quarter</li><li>Buyers claim ITC without waiting for quarter-end</li></ul></div>
+    <div class="card"><h4>Benefits</h4><ul><li>4 returns instead of 12</li><li>Can make inter-State supplies</li><li>Flexible payment method</li><li>Can issue tax invoices and collect GST</li><li>Continuous ITC flow for buyers; good for B2B</li></ul></div>
+  </div>
+
+  <h3><span class="n">63</span>E-invoicing</h3>
+  <p>Electronic authentication of B2B invoices by GSTN through the <b>Invoice Registration Portal (IRP)</b>. Mandatory for businesses with turnover above <b>₹10 crore</b> from 1 October 2022.</p>
+  <div class="tl">
+    <div style="--c:var(--h1)"><b>1</b>Supplier uploads the B2B invoice to the IRP</div>
+    <div style="--c:var(--h6)"><b>2</b>IRP issues an Invoice Reference Number (IRN), a digitally signed e-invoice and a QR code</div>
+    <div style="--c:var(--h5)"><b>3</b>Buyer receives the invoice with QR code and IRN</div>
+    <div style="--c:var(--h4)"><b>4</b>Data auto-flows to the GST Portal and E-Way Bill Portal</div>
+  </div>
+  <p><b>Purpose:</b> standard invoice formats, system-to-system readability, auto-populated returns, fewer reconciliation problems, real-time reporting against evasion.</p>
+  <p><b>Exempt:</b> SEZ units (developers may be covered); banks, NBFCs, insurers; goods transport agencies (road); passenger transport; admission to multiplex cinemas.</p>
+
+  <h3><span class="n">64</span>GST Compensation Cess</h3>
+  <ul><li><b>Purpose:</b> compensate States/UTs for GST revenue loss over a 5-year transition (2017–2022).</li><li><b>Basis:</b> assumed 14% annual growth in State GST revenue over base year 2015–16.</li><li><b>Levied on</b> luxury and sin goods on top of GST: tobacco products, aerated drinks, motor vehicles, coal, lignite, peat.</li><li>Collected by the Centre into the GST Compensation Fund, used only to compensate States.</li><li><b>Shortfall:</b> collections fell short, especially in the 2020 COVID lockdown, so the Centre borrowed.</li><li><b>Extension:</b> the levy continued beyond 30 June 2022 to repay those pandemic-era compensation loans. The Centre's statutory obligation ended; no fresh compensation is paid.</li><li><b>Law:</b> GST (Compensation to States) Act, 2017. Administered by the Department of Revenue.</li></ul>
+
+  <h3><span class="n">65</span>Kerala Flood Cess</h3>
+  <div class="grid">
+    <div class="card tint"><h4>When and why</h4><p>From <b>1 June 2019</b> for 2 years (till May 2021), to fund Rebuild Kerala after the 2018 floods.</p></div>
+    <div class="card tint"><h4>Rate</h4><p>Extra <b>1%</b> on goods and services with GST above 5%.</p></div>
+    <div class="card tint"><h4>Scope</h4><p>Not on railway services, movie tickets, or goods/services at 5% or nil. Only <b>intra-State</b> transactions within Kerala.</p></div>
+  </div>
+
+  <h3><span class="n">66</span>Advance ruling</h3>
+  <p>A written decision by tax authorities on GST questions <em>before</em> a transaction. It gives clarity, cuts disputes and improves compliance.</p>
+  <ul><li><b>Authority for Advance Ruling (AAR)</b> in each State/UT; appeals go to the <b>AAAR</b>.</li><li>Covers: classification, applicability of a notification, time and value of supply, ITC eligibility, determination of liability.</li><li>Binding on the applicant and the jurisdictional GST officer while facts stay the same.</li></ul>
+
+  <h3><span class="n">67</span>NAA and GSTAT</h3>
+  <div class="grid">
+    <div class="card"><h4>National Anti-Profiteering Authority (NAA)</h4><ul><li>Statutory body under CGST Act, 2017</li><li>Ensures GST rate cuts reach consumers as lower prices</li><li>Can impose penalties, order refunds (unidentifiable consumers: Consumer Welfare Fund), act on complaints or suo motu</li><li>Initially 2 years, extended twice; last term ended <b>30 Nov 2022</b></li><li>Job shifted to the <b>Competition Commission of India</b></li></ul></div>
+    <div class="card"><h4>GST Appellate Tribunal (GSTAT)</h4><ul><li>Statutory body under CGST Act, 2017</li><li>Hears appeals against first appellate authorities</li><li>One national forum for Centre–State GST disputes; lightens High Court load</li><li>Principal Bench: New Delhi; about 31 State/Regional Benches across about 45 locations</li><li>Each bench: a Judicial Member plus technical members from Centre and State</li><li>President: Justice (Retd.) Sanjaya Kumar Mishra</li><li>Now the national appellate authority for advance-ruling disputes</li><li>Digital: e-Courts portal, virtual hearings</li><li>Legacy appeals: file by <b>30 June 2026</b> (orders till 31 Mar 2026). Normal limit: 3 months (orders after 1 Apr 2026)</li><li>Backlog about 4 lakh appeals; 116 members, 32 benches</li></ul></div>
+  </div>
+  <p><b>Key issues:</b> transition and backlog; balance of Centre–State technical members; timely judgments.</p>
+
+  <h3><span class="n">68</span>Cascading and the common national market</h3>
+  <div class="grid">
+    <div class="card"><h4>How GST removed cascading</h4><ul><li>One system: CGST, SGST/UTGST, IGST</li><li>Seamless ITC from manufacturing to wholesale to retail</li><li>Tax only on value addition</li><li>Fewer hidden costs</li></ul></div>
+    <div class="card"><h4>How it built a common market</h4><ul><li>Uniform tax structure across States</li><li>IGST smooths inter-State trade, no cascading like old CST</li><li>E-way bill removes check-post delays</li><li>Easier business, more competitive industry</li></ul></div>
+  </div>
+  <h4 style="margin-top:16px">Current updates (2025 context)</h4>
+  <div class="grid">
+    <div class="card tint"><h4>1.51 crore</h4><p>GST taxpayers in 2025, up from 66.5 lakh in 2017.</p></div>
+    <div class="card tint"><h4>₹2.04 lakh crore</h4><p>Average monthly collection, up from ₹82,000 crore in 2017–18.</p></div>
+    <div class="card tint"><h4>~30%</h4><p>GST's share of the Centre's gross tax revenue (Budget 2025–26).</p></div>
+  </div>
+  <p style="margin-top:12px">States were compensated for revenue loss till June 2022; the post-compensation period shows higher SGST buoyancy. GST also helped India climb the World Bank Ease of Doing Business ranking earlier.</p>
+  <div class="aid"><b>Mains-ready close</b><span>GST (2017) broadened the base, improved buoyancy and created a unified market. The next phase, GST 2.0, aims at a simplified two-rate structure, seamless digital compliance (e-invoicing, e-way bills) and dispute resolution through the newly operational GSTAT (2025), supporting formalisation and competitiveness for a developed India by 2047.</span></div>
+</section>
+
+<!-- PART 9 -->
+<section class="part" id="p9" style="--c:var(--h2)">
+  <div class="part-head"><span class="tag">Part I</span><h2>Previous year questions</h2><p>28 Prelims questions from 2013 to 2025 and 3 Mains questions. Pick an option to see the answer key.</p></div>
+  <h3><span class="n">▶</span>Exam distinctions to revise first</h3>
+  <div class="tbl"><table>
+    <tr><th>Compare</th><th>Remember</th></tr>
+    <tr><td>CFI / Public Account / Contingency Fund</td><td>266(1), 266(2), 267(1). Prior approval for CFI; trustee money in PA; emergency advance from Contingency Fund</td></tr>
+    <tr><td>Revenue vs capital receipt</td><td>Revenue: no repayment liability, no asset reduced. Capital: creates liability or reduces assets</td></tr>
+    <tr><td>Revenue vs capital expenditure</td><td>Revenue: normally no asset. Capital: creates asset or reduces liability</td></tr>
+    <tr><td>Fiscal vs revenue deficit</td><td>Fiscal: whole borrowing requirement. Revenue: shortfall in routine revenue</td></tr>
+    <tr><td>Fiscal vs primary deficit</td><td>Primary removes interest on past debt</td></tr>
+    <tr><td>Internal vs external debt</td><td>Domestic vs foreign; external carries forex risk</td></tr>
+    <tr><td>Direct vs indirect tax</td><td>Direct burden stays with the liable person; indirect passes on through price</td></tr>
+    <tr><td>Origin vs destination</td><td>GST is destination-based</td></tr>
+  </table></div>
+
+  <h3><span class="n">Prelims</span>28 questions</h3>
+  <div class="qbar"><span class="score" id="score">Answered 0 / 28 · Correct 0</span><button class="btn" id="reveal" type="button">Show all answers</button><button class="btn" id="reset" type="button">Reset</button></div>
+  <div id="quiz"></div>
+
+  <h3><span class="n">Mains</span>Descriptive questions in the source</h3>
+  <div class="mains">
+    <div class="q"><header><span class="yr">GST</span><b>Mains 1</b></header><p class="stem">Explain the salient features of the Constitution (One Hundred and First Amendment) Act, 2016. Do you think it is efficacious enough "to remove cascading effect of taxes and provide for common national market for goods and services"? (250 words)</p></div>
+    <div class="q"><header><span class="yr">2019</span><b>Mains 2</b></header><p class="stem">Enumerate the indirect taxes which have been subsumed in the Goods and Services Tax (GST) in India. Also, comment on the revenue implications of the GST introduced in India in July 2017. (150 words, 10 marks)</p></div>
+    <div class="q"><header><span class="yr">2020</span><b>Mains 3</b></header><p class="stem">Explain the rationale behind the Goods and Services Tax (Compensation to States) Act of 2017. How has COVID-19 impacted the GST compensation fund and created new federal tensions? (250 words, 15 marks)</p></div>
+  </div>
+  <p class="src">Source overlaps: Q5 and Q9 are near-duplicates (2015 and 2016); Q11 and Q15 repeat the GST questions printed in the GST chapter. The source's own answer key is used as printed.</p>
+</section>
+
+<!-- PART 10 -->
+<section class="part" id="p10" style="--c:var(--h4)">
+  <div class="part-head"><span class="tag">Part J</span><h2>Quick glossary</h2><p>Every abbreviation used above.</p></div>
+  <div class="gl" id="gl"></div>
+  <footer>Built from your two Public Finance files and the simplified notes. Figures and policy-status statements are shown as the source gives them. Some are time-sensitive, and the source's own scan errors are marked rather than corrected.</footer>
+</section>
+
+</main>
+</div>
+</div>
+
+<script>
+(function(){
+  // calculator
+  var ids=['re','ce','rr','nd','in','gr'];
+  function v(id){var n=parseFloat(document.getElementById('i-'+id).value);return isNaN(n)?0:n}
+  function f(n){return n.toLocaleString('en-IN')}
+  function calc(){
+    var re=v('re'),ce=v('ce'),rr=v('rr'),nd=v('nd'),it=v('in'),gr=v('gr');
+    var rd=re-rr, fd=re+ce-(rr+nd);
+    document.getElementById('o-rd').textContent=f(rd);
+    document.getElementById('o-erd').textContent=f(rd-gr);
+    document.getElementById('o-fd').textContent=f(fd);
+    document.getElementById('o-pd').textContent=f(fd-it);
+  }
+  ids.forEach(function(i){document.getElementById('i-'+i).addEventListener('input',calc)});
+  calc();
+
+  // quiz data
+  var L=['a','b','c','d'];
+  var Q=[
+  [2013,"In India, deficit financing is used for raising resources for",["economic development","redemption of public debt","adjusting the balance of payments","reducing the foreign debt"],0,""],
+  [2014,"The sales tax you pay while purchasing a toothpaste is a",["tax imposed by the Central Government","tax imposed by the Central Government but collected by the State Government","tax imposed by the State Government but collected by the Central Government","tax imposed and collected by the State Government"],3,"Sales tax was a State levy, collected by the State."],
+  [2014,"With reference to Union Budget, which of the following is/are covered under Non-Plan Expenditure?\n1. Defence expenditure\n2. Interest payments\n3. Salaries and pensions\n4. Subsidies",["1 only","2 and 3 only","1, 2, 3 and 4","None"],2,""],
+  [2015,"With reference to the Fourteenth Finance Commission, which of the following statements is/are correct?\n1. It has increased the share of States in the central divisible pool from 32 percent to 42 percent.\n2. It has made recommendations concerning sector-specific grants.",["1 only","2 only","Both 1 and 2","Neither 1 nor 2"],0,""],
+  [2015,"There has been a persistent deficit budget year after year. Which of the following actions can be taken by the government to reduce the deficit?\n1. Reducing revenue expenditure\n2. Introducing new welfare schemes\n3. Rationalizing subsidies\n4. Expanding industries",["1 and 3 only","2 and 3 only","1 only","1, 2, 3 and 4"],0,"Cutting revenue spending and rationalising subsidies are fiscal-consolidation steps (Part 6)."],
+  [2015,"A decrease in tax to GDP ratio of a country indicates which of the following?\n1. Slowing economic growth rate\n2. Less equitable distribution of national income",["1 only","2 only","Both 1 and 2","Neither 1 nor 2"],0,""],
+  [2015,"The Fair and Remunerative Price (FRP) of sugarcane is approved by the",["Cabinet Committee on Economic Affairs","Commission for Agricultural Costs and Prices","Directorate of Marketing and Inspection, Ministry of Agriculture","Agricultural Produce Market Committee"],0,""],
+  [2015,"With reference to the Union Government, consider the following statements:\n1. The Department of Revenue is responsible for the preparation of Union Budget that is presented to the Parliament.\n2. No amount can be withdrawn from the Consolidated Fund of India without the authorization from the Parliament of India.\n3. All the disbursements made from Public Account also need the authorization from the Parliament of India.",["1 and 2 only","2 and 3 only","2 only","1, 2 and 3"],2,"The Budget Division sits in the Department of Economic Affairs (not Revenue). CFI needs Parliament's authorisation; the Public Account does not."],
+  [2016,"There has been a persistent deficit budget year after year. Which action/actions of the following can be taken by the Government to reduce the deficit?\n1. Reducing revenue expenditure\n2. Introducing new welfare schemes\n3. Rationalizing subsidies\n4. Reducing import duty",["1 only","2 and 3 only","1 and 3 only","1, 2, 3 and 4"],2,""],
+  [2016,"Which of the following is/are included in the capital budget of the Government of India?\n1. Expenditure on acquisition of assets like roads, buildings, machinery, etc.\n2. Loans received from foreign governments\n3. Loans and advances granted to the States and Union Territories",["1 only","2 and 3 only","1 and 3 only","1, 2 and 3"],3,"Capital expenditure builds assets and lends; foreign loans are capital receipts."],
+  [2017,"What is/are the most likely advantages of implementing 'Goods and Services Tax (GST)'?\n1. It will replace multiple taxes collected by multiple authorities and will thus create a single market in India.\n2. It will drastically reduce the 'Current Account Deficit' of India and will enable it to increase its foreign exchange reserves.\n3. It will enormously increase the growth and size of the economy of India and will enable it to overtake China in the near future.",["1 only","2 and 3 only","1 and 3 only","1, 2 and 3"],0,""],
+  [2017,"Consider the following statements:\n1. Tax revenue as a percent of GDP of India has steadily increased in the last decade.\n2. Fiscal deficit as a percent of GDP of India has steadily increased in the last decade.\nWhich of the statements given above is/are correct?",["1 only","2 only","Both 1 and 2","Neither 1 nor 2"],3,""],
+  [2018,"Consider the following statements:\n1. The FRBM Review Committee Report has recommended a debt to GDP ratio of 60% for the general (combined) government by 2023, comprising 40% for the Central Government and 20% for the State Governments.\n2. The Central Government has domestic liabilities of 21% of GDP as compared to that of 49% of GDP of the State Governments.\n3. As per the Constitution of India, it is mandatory for a State to take the Central Government's consent for raising any loan if the former owes any outstanding liabilities to the latter.",["1 only","2 and 3 only","1 and 3 only","1, 2 and 3"],2,"Statement 1 matches the N.K. Singh recommendation (40% Centre + 20% States)."],
+  [2018,"Consider the following:\n1. Areca nut  2. Barley  3. Coffee  4. Finger millet  5. Groundnut  6. Sesamum  7. Turmeric\nThe Cabinet Committee on Economic Affairs has announced the Minimum Support Price for which of the above?",["1, 2, 3 and 7 only","2, 4, 5 and 6 only","1, 3, 4, 5 and 6 only","1, 2, 3, 4, 5, 6 and 7"],1,""],
+  [2018,"Consider the following items:\n1. Cereal grains hulled\n2. Chicken eggs cooked\n3. Fish processed and canned\n4. Newspapers containing advertising material\nWhich of the above items is/are exempted under GST?",["1 only","2 and 3 only","1, 2 and 4 only","1, 2, 3 and 4"],2,""],
+  [2019,"The economic cost of food grains to the Food Corporation of India is Minimum Support Price and bonus (if any) paid to the farmers plus",["transportation cost only","interest cost only","procurement incidentals and distribution cost","procurement incidentals and charges for godowns"],2,""],
+  [2020,"Consider the following statements:\n1. In the case of all cereals, pulses and oil-seeds, the procurement at Minimum Support Price (MSP) is unlimited in any State/UT of India.\n2. In the case of cereals and pulses, the MSP is fixed in any State/UT at a level to which the market price will never rise.",["1 only","2 only","Both 1 and 2","Neither 1 nor 2"],3,""],
+  [2020,"Along with the Budget, the Finance Minister also places other documents before the Parliament which include 'The Macro-Economic Framework Statement'. The aforesaid document is presented because this is mandated by",["Long-standing parliamentary convention","Article 112 and Article 110(1) of the Constitution of India","Article 113 of the Constitution of India","Provisions of the Fiscal Responsibility and Budget Management Act, 2003"],3,"The FRBM Act requires MTFPS, FPSS and the Macroeconomic Framework Statement every year."],
+  [2020,"Which of the following factors/policies were affecting the price of rice in India in the recent past?\n1. Minimum Support Price\n2. Government's trading\n3. Government's stockpiling\n4. Consumer subsidies",["1, 2 and 4 only","1, 3 and 4 only","2 and 3 only","1, 2, 3 and 4"],3,""],
+  [2021,"Which among the following steps is most likely to be taken at the time of an economic recession?",["Cut in tax rates accompanied by increase in interest rate","Increase in expenditure on public projects","Increase in tax rates accompanied by reduction of interest rate","Reduction of expenditure on public projects"],1,"Expansionary policy: spend more, build infrastructure (Part 2)."],
+  [2021,"Which one of the following effects of creation of black money in India has been the main cause of worry to the Government of India?",["Diversion of resources to the purchase of real estate and investment in luxury housing","Investment in unproductive activities and purchase of precious stones, jewellery, gold etc.","Large donations to political parties and growth of regionalism","Loss of revenue to the State Exchequer due to tax evasion"],3,""],
+  [2022,"With reference to the expenditure made by an organisation or a company, which of the following statements is/are correct?\n1. Acquiring new technology is capital expenditure.\n2. Debt financing is considered capital expenditure, while equity financing is considered revenue expenditure.",["1 only","2 only","Both 1 and 2","Neither 1 nor 2"],0,""],
+  [2023,"Consider the following:\n1. Demographic performance\n2. Forest and ecology\n3. Governance reforms\n4. Stable government\n5. Tax and fiscal efforts\nFor the horizontal tax devolution, the Fifteenth Finance Commission used how many of the above as criteria other than population, area and income distance?",["Only two","Only three","Only four","All five"],1,""],
+  [2025,"Consider the following statements:\nStatement I: In India, income from allied agricultural activities like poultry farming and wool rearing in rural areas is exempted from any tax.\nStatement II: In India, rural agricultural land is not considered a capital asset under the provisions of the Income-tax Act, 1961.\nWhich one of the following is correct?",["Both Statement I and Statement II are correct and Statement II explains Statement I","Both are correct but Statement II does not explain Statement I","Statement I is correct but Statement II is not correct","Statement I is not correct but Statement II is correct"],3,""],
+  [2025,"Consider the following statements:\nI. Capital receipts create a liability or cause a reduction in the assets of the Government.\nII. Borrowings and disinvestment are capital receipts.\nIII. Interest received on loans creates a liability of the Government.",["I and II only","II and III only","I and III only","I, II and III"],0,"Interest received is non-tax revenue, a revenue receipt, and creates no liability."],
+  [2025,"Suppose the revenue expenditure is 80,000 crores and the revenue receipts of the Government are 60,000 crores. The Government budget also shows borrowings of 10,000 crores and interest payments of 6,000 crores. Which of the following statements are correct?\nI. Revenue deficit is 20,000 crores.\nII. Fiscal deficit is 10,000 crores.\nIII. Primary deficit is 4,000 crores.",["I and II only","II and III only","I and III only","I, II and III"],3,"RD = 80,000 − 60,000 = 20,000. The question treats borrowings of 10,000 as the fiscal deficit. PD = 10,000 − 6,000 = 4,000. Try it in the calculator above."],
+  [2025,"A country's fiscal deficit stands at 50,000 crores. It is receiving 10,000 crores through non-debt creating capital receipts. The country's interest liabilities are 1,500 crores. What is the gross primary deficit?",["48,500 crores","51,500 crores","58,500 crores","None of the above"],0,"Primary deficit = FD − interest = 50,000 − 1,500 = 48,500, as the source's key gives."],
+  [2025,"Which of the following statements with regard to recommendations of the 15th Finance Commission of India are correct?\nI. It has recommended grants of ₹4,800 crores from 2022-23 to 2025-26 for incentivizing States to enhance educational outcomes.\nII. 45% of the net proceeds of Union taxes are to be shared with States.\nIII. ₹45,000 crores are to be kept as performance-based incentive for all States for carrying out agricultural reforms.\nIV. It reintroduced tax effort criteria to reward fiscal performance.",["I, II and III","I, II and IV","I, III and IV","II, III and IV"],2,""]
+  ];
+  var box=document.getElementById('quiz'),done={},right=0;
+  Q.forEach(function(q,i){
+    var d=document.createElement('div');d.className='q';d.id='q'+(i+1);
+    var h='<header><span class="yr">'+q[0]+'</span><b>Q'+(i+1)+'</b></header><p class="stem"></p><div class="opts"></div><div class="ans" hidden></div>';
+    d.innerHTML=h;
+    d.querySelector('.stem').textContent=q[1];
+    var o=d.querySelector('.opts');
+    q[2].forEach(function(t,j){
+      var b=document.createElement('button');b.type='button';b.className='opt';
+      b.innerHTML='<i>'+L[j]+'</i><span></span>';b.querySelector('span').textContent=t;
+      b.addEventListener('click',function(){pick(i,j)});
+      o.appendChild(b);
+    });
+    box.appendChild(d);
+  });
+  function show(i,j){
+    var d=document.getElementById('q'+(i+1)),bs=d.querySelectorAll('.opt'),a=Q[i][3];
+    bs.forEach(function(b,k){b.disabled=true;if(k===a)b.classList.add('right');else if(k===j)b.classList.add('wrong')});
+    var an=d.querySelector('.ans');an.hidden=false;
+    an.textContent='Answer: ('+L[a]+') '+Q[i][2][a]+(Q[i][4]?'. '+Q[i][4]:'');
+  }
+  function upd(){
+    var n=Object.keys(done).length;
+    document.getElementById('score').textContent='Answered '+n+' / 28 · Correct '+right;
+  }
+  function pick(i,j){
+    if(done[i]!==undefined)return;
+    done[i]=j;if(j===Q[i][3])right++;
+    show(i,j);upd();
+  }
+  document.getElementById('reveal').addEventListener('click',function(){
+    Q.forEach(function(q,i){if(done[i]===undefined){show(i,-1)}});
+  });
+  document.getElementById('reset').addEventListener('click',function(){
+    done={};right=0;
+    document.querySelectorAll('.q .opt').forEach(function(b){b.disabled=false;b.classList.remove('right','wrong')});
+    document.querySelectorAll('#quiz .ans').forEach(function(a){a.hidden=true});
+    upd();
+  });
+
+  // glossary
+  var G=[["AAR","Authority for Advance Ruling"],["AAAR","Appellate Authority for Advance Ruling"],["ADB","Asian Development Bank"],["APA","Advance Pricing Agreement"],["BE","Budget Estimates"],["CapEx","Capital Expenditure"],["CFI","Consolidated Fund of India"],["CCI","Competition Commission of India"],["CGST","Central Goods and Services Tax"],["CRR","Cash Reserve Ratio"],["DBT","Direct Benefit Transfer"],["ECB","External Commercial Borrowing"],["ERD","Effective Revenue Deficit"],["FD","Fiscal Deficit"],["FCI","Food Corporation of India"],["FPSS","Fiscal Policy Strategy Statement"],["FRBM","Fiscal Responsibility and Budget Management"],["GDP","Gross Domestic Product"],["GST","Goods and Services Tax"],["GSTAT","GST Appellate Tribunal"],["GSTIN","GST Identification Number"],["GSTN","GST Network"],["G-Secs","Government Securities"],["IRN","Invoice Reference Number"],["IRP","Invoice Registration Portal"],["ITC","Input Tax Credit"],["MFS","Macroeconomic Framework Statement"],["MGNREGA","Mahatma Gandhi National Rural Employment Guarantee Act/scheme"],["MTFPS","Medium-Term Fiscal Policy Statement"],["NBFC","Non-Banking Financial Company"],["NSSF","National Small Savings Fund"],["PA","Public Account of India"],["PE","Provisional Estimates"],["PFC","Power Finance Corporation"],["PMGSY","Pradhan Mantri Gram Sadak Yojana"],["PSU","Public Sector Undertaking"],["QRMP","Quarterly Return Filing and Monthly Payment"],["RE","Revised Estimates"],["RBI","Reserve Bank of India"],["SPV","Special Purpose Vehicle"],["SLR","Statutory Liquidity Ratio"],["T-Bill","Treasury Bill"],["WMA","Ways and Means Advances"],["ZBB","Zero-Base Budgeting"]];
+  var gl=document.getElementById('gl');
+  G.forEach(function(g){var d=document.createElement('div');d.innerHTML='<b></b><span></span>';d.firstChild.textContent=g[0];d.lastChild.textContent=g[1];gl.appendChild(d)});
+
+  // rail scrollspy
+  var links=[].slice.call(document.querySelectorAll('#rail a'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+  function spy(){
+    var y=window.scrollY+140,cur=0;
+    secs.forEach(function(s,i){if(s.offsetTop<=y)cur=i});
+    links.forEach(function(a,i){a.classList.toggle('on',i===cur)});
+  }
+  window.addEventListener('scroll',spy,{passive:true});spy();
+
+  // theme toggle (per-viewer convenience)
+  var root=document.documentElement;
+  document.getElementById('themebtn').addEventListener('click',function(){
+    var dark=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+    root.setAttribute('data-theme',dark?'light':'dark');
+  });
+})();
+</script>
+
+</body></html>
